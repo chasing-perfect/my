@@ -1,0 +1,208 @@
+
+<view class='particulars'>
+  <!-- 头部开始 -->
+  <view class='title-img'>
+    <image src=''></image>
+    <!-- top -->
+    <view class='top'>
+      <text class='btn'>返回</text>
+      <view class='part'>
+        <text class='car'>car</text>
+        <view class='moreMeg'>
+          <text>消息</text>
+          <text class='megNum'>00</text>
+        </view>
+      </view>
+    </view>
+    <!-- bottom -->
+    <view class='bottom'>
+      <text class='facade'>外观</text>
+      <text class='img'>图片</text>
+    </view>
+  </view>
+  <!-- 头部结束 -->
+  <!-- 详情信息开始 -->
+  <view class='megs'>
+    <view class='meger'>
+      <text class='txt'>新款正品魏太林，洒在动静分区五年；埃尔开发贷款你可知道次哦v</text>
+      <text class='share'>分享</text>
+    </view>
+    <view class='price'>
+      ￥<text>118-159</text>
+    </view>
+    <view class='allNum'>
+      <view class='kuai'>快递:<text>免运费</text></view>
+      <view class='ping'>已拼118笔</view>
+    </view>
+  </view>
+   <!-- 详情信息结束 -->
+   <!-- 拼单开始 -->
+  <view class='crowdordering'>
+    <!-- shop开始 -->
+    <view class='shop'>
+      <view class='left'>
+        <view class='allQuan'> 
+          <view class='quan'>
+            <text>店铺</text>
+            <text>优惠券</text>
+          </view>
+          <text class='sq'>10元店铺优惠券</text>
+        </view>
+        <view class='allQuan'> 
+          <view class='quan'>
+            <text>店铺</text>
+            <text>优惠券</text>
+          </view>
+          <text class='sq'>10元店铺优惠券</text>
+        </view>
+      </view>
+      <view class='right'>
+      >
+      </view>
+    </view>
+  
+    <!-- shop结束 -->
+    <view class='shipping-information'>
+      <view class='inforLeft'>
+          <text>7天无理由</text>
+          <text>48小时发货</text>
+          <text>假一赔十</text>
+          <text>全场包邮</text>
+      </view>
+      <text class='jian'>
+      >
+      </text>
+    </view>
+    <view class='pinPeople'>
+      <view class='every'>
+        <view class='pLeft'>
+          <text class='allPer'>2人在拼单，可直接参与</text>
+          <view class='ig'>
+            <image src=''></image>
+            <text class='names'>lorem psoun</text>
+          </view>
+        </view>
+        <view class='pRight'>
+          <view class='cha'>
+            <text class='chaPerson'>差3人拼成</text>
+            <text class='times'>剩余<text>23:27:26</text></text>
+          </view>
+          <view class='goPing'>去拼单</view>
+        </view>
+      </view>
+
+    </view>
+    <!-- 评价开始 -->
+    <view class='appraise'>
+      <view  class='shopAppraise'>
+        <text class='shopLeft'>商品评价(8823)</text>
+        <text class='more'>查看更多 》 </text>
+      </view>
+      <view class='selectLook'>
+        <view>
+          便宜(126)
+        </view>
+         <view>
+         质量好(111)
+        </view>
+         <view>
+         软硬度好(51)
+        </view>
+         <view>
+          服务态度好(45)
+        </view>
+         <view>
+         枕着很舒服(46)
+        </view>
+      </view>
+      <view class='allList'>
+        <view class='list'>
+          <view class='per'>
+            <image src=''></image>
+            <text class='wangName'>lorem fahwoe</text>
+          </view>
+          <text class='content'>
+            上坪确实是好的，谁上去确实是软的
+            一脚水稻天亮
+            二期我还得撒赖扩大发觉文字框cjvhq.na;w阿尔法和aaenfoiaisd
+            啊v打开设置v阿飞离开
+          </text>
+        </view>
+         <view class='list'>
+          <view class='per'>
+            <image src=''></image>
+            <text class='wangName'>lorem fahwoe</text>
+          </view>
+          <text class='content'>
+            上坪确实是好的，谁上去确实是软的
+            一脚水稻天亮
+            二期我还得撒赖扩大发觉文字框cjvhq.na;w阿尔法和aaenfoiaisd
+            啊v打开设置v阿飞离开
+          </text>
+        </view>
+        <view class='watchMore'>查看更多</view>
+      </view>
+
+    </view>
+     <!-- 评价结束 -->
+     <!-- 商品详情开始 -->
+      <view class='shopMore'>
+        <view class='shop-title'>
+          商品详情
+        </view>
+        <view class='shop-list'>
+          <view class='list-every'>
+            <image src=''></image>
+            <text class='shop-name'>乳胶</text>
+            <view class='shop-price'>
+              <text class='price-left'>left</text>
+              <text class='surePrice'>228.00</text>
+              <view class='toGo'>
+                <text class='txt'>立即购买</text>
+                <text>icon</text>
+              </view>
+            </view>
+          </view>
+          <view class='list-every'>
+            <image src=''></image>
+            <text class='shop-name'>乳胶</text>
+            <view class='shop-price'>
+              <text class='price-left'>left</text>
+              <text class='surePrice'>228.00</text>
+              <view class='toGo'>
+                <text class='txt'>立即购买</text>
+                <text>icon</text>
+              </view>
+            </view>
+          </view>
+          <view class='list-every'>
+            <image src=''></image>
+            <text class='shop-name'>乳胶</text>
+            <view class='shop-price'>
+              <text class='price-left'>left</text>
+              <text class='surePrice'>228.00</text>
+              <view class='toGo'>
+                <text class='txt'>立即购买</text>
+                <text>icon</text>
+              </view>
+            </view>
+          </view>
+          <view class='list-every'>
+            <image src=''></image>
+            <text class='shop-name'>乳胶</text>
+            <view class='shop-price'>
+              <text class='price-left'>left</text>
+              <text class='surePrice'>228.00</text>
+              <view class='toGo'>
+                <text class='txt'>立即购买</text>
+                <text>icon</text>
+              </view>
+            </view>
+          </view>
+          
+        </view>
+      </view>
+     <!-- 商品详情结束 -->
+  </view>
+  <!-- 拼单结束 -->
+</view>
