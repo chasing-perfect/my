@@ -56,6 +56,7 @@ Page({
         checked: false
       }
     ],
+    checkGood: [],
     allCheck:false,
     totalPrice:0,
     isDisable:false,
@@ -138,9 +139,18 @@ Page({
   },
   gosettlement() {
     this.isGo()
-    if (!this.isDisable){
+    this.data.checkGood.length = 0
+    this.data.data.forEach(item => {
+      if (item.checked) {
+        this.data.checkGood.push(item)
+      }
+    })
+    this.setData({
+      checkGood: this.data.checkGood
+    })
+    if (!this.isDisable) {
       wx.navigateTo({
-        url: '../account/account',
+        url: '../account/account?good=' + JSON.stringify(this.data.checkGood)
       })
     }
   },
