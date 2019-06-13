@@ -1,0 +1,14 @@
+<!--pages/ui/ui.wxml-->
+<van-button type="primary">按钮</van-button>
+<!-- 获取用户信息 -->
+<button open-type='getUserInfo' lang="zh-CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<image src="{{userInfo.avatarUrl}}"></image>
+<view>{{userInfo.nickName}}</view>
+
+<!-- 地图 -->
+<!-- <map id="map" marker="{callout:{content:'标记'}}" show-location ></map> -->
+<button bindtap='gotPosition'>获取位置</button>
+<button bindtap='onGoToSetting'>授权面板</button>
+<button bindtap='onGoToPosition'>授权位置</button>
+<map id="map" scale="14" controls="{{controls}}" markers="{{markers}}" polyline="{{polyline}}" latitude='{{latitude}}' longitude='{{longitude}}' show-location style="width: 100%; height: 300px;"></map>
+

@@ -1,2 +1,52 @@
 <!--pages/shoppingCart/shoppingCart.wxml-->
-<text>pages/shoppingCart/shoppingCart.wxml</text>
+<view class='contain'>
+  <view class='top'></view>
+  <!-- 购物车为空 -->
+  <view class='content' wx:if="{{isShow}}">
+    <image class='pic' src='../base/image/ele.png'></image>
+    <text>购物车是空的~</text>
+    <button>去逛逛</button>
+  </view>
+  <!-- 购物车内有商品 -->
+  <view class='goodlist' wx:if="{{!isShow}}">
+    <view class='goodBox'>
+      <view class='goodItem' wx:for="{{data}}">
+        <!-- <checkbox-group bindchange="changeItem" data-index='{{index}}'>
+          <checkbox value="{{item.checked}}" checked="{{item.checked}}"></checkbox>
+        </checkbox-group> -->
+        <van-checkbox value="{{ item.checked }}" checked-color="#07c160" data-index='{{index}}' bind:change="changeItem">
+        </van-checkbox>
+        <image src="" class='pic'></image>
+        <view class='descriptionBox'>
+          <view class='description'>
+            <text>{{item.title}}</text>
+            <text>{{item.color}}</text>
+            <text>￥{{item.price}}</text>
+          </view>
+          <view class='box'>
+            <view class='countBox' wx:if='{{!item.checked}}'>
+              <text bindtap="even" data-index='{{index}}'> - </text>
+              <text> {{item.count}} </text>
+              <text bindtap="add" data-index='{{index}}'> + </text>
+            </view>
+            <view class='remove' bindtap='remove' data-index='{{index}}' wx:if='{{item.checked}}'>
+              <icon></icon>
+              删除
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 全选 -->
+  <view class='accountBox' wx:if="{{!isShow}}">
+    <van-checkbox value="{{ allCheck }}" checked-color="#07c160" bind:change="change">
+    </van-checkbox>
+    <view class='goAccount'>
+      <text>￥{{totalPrice}}.00</text>
+      <button class='accountBtn' bindtap='gosettlement' disabled='{{isDisable}}'>去结算</button>
+    </view>
+  </view>
+  <!-- tabbar -->
+  <tabbar totalCount='{{totalCount}}'></tabbar>
+</view>

@@ -18,11 +18,12 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wx30b7121f2b588d89",
+	"appid": "wxd7328dc87eeaaf72",
 	"projectname": "%E9%A1%B9%E7%9B%AE",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -39,13 +40,45 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "cart",
+					"pathName": "pages/shoppingCart/shoppingCart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "account",
+					"pathName": "pages/account/account",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ui",
+					"pathName": "pages/ui/ui",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "main",
+					"pathName": "pages/main/main",
+					"scene": null
+				}
+			]
 		}
 	}
 }
