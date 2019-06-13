@@ -1,1 +1,264 @@
-/* pages/mine/mine.wxss */
+.warp{
+  width:750rpx;
+  height:3000rpx;
+  background:#ccc;
+}
+.goudan{
+  width:750rpx;
+  height:580rpx;
+  background:#fff;
+  margin-bottom:20rpx; 
+}
+.box{
+  width:700rpx;
+  height:160rpx;
+  margin-left:25rpx; 
+  display: flex;
+  justify-content: space-between;
+}
+.warp-left{
+  width:370rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  width:160rpx;
+  height:160rpx;
+  display: block;
+}
+.box-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  font-size:43rpx;
+  position:relative;
+  top:40rpx;
+}
+.gengxin{
+  width:160rpx;
+  height:50rpx;
+  background: #f6c1bb;
+  color:white;
+  font-size:24rpx;
+  border-radius:20px; 
+  text-align: center;
+  line-height: 50rpx;
+  position:relative;
+  top:40rpx;
+}
+.warp-right{
+  width:220rpx;
+  height:68rpx;
+  border:1px solid #a6a6a6;
+  border-radius:20px;
+  position: relative;
+  top:46rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.hong{
+  width:34rpx;
+  height:34rpx;
+  margin-left:30rpx; 
+  position:relative;
+  top:17rpx;
+}
+.pindan{
+  font-size:27rpx;
+  margin-right:30rpx; 
+  line-height: 68rpx;
+}
+.image image{
+  position: relative;
+  top:30rpx;
+  width:700rpx;
+  height:160rpx;
+  margin-left:25rpx; 
+}
+.wode{
+  width:700rpx;
+  height:115rpx;
+  margin-left:25rpx; 
+  position:relative;
+  top:20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.dingdan{
+  font-size:37rpx;
+  line-height: 115rpx;
+}
+.quanbu{
+  color:#a3a3a3;
+  font-size:30rpx;
+  line-height:115rpx;
+}
+.box-bottom{
+  width:700rpx;
+  height:140rpx;
+  margin-left:25rpx;
+  display: flex;
+  justify-content: space-between; 
+}
+.shangxia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fukuan{
+  width:55rpx;
+  height:45rpx;
+  display: block;
+  position:relative;
+  top:15rpx; 
+}
+.daifukuan{
+  position:relative;
+  top:30rpx;
+}
+.youhui{
+  width:750rpx;
+  height:210rpx;
+  background: #fff;
+  margin-bottom:20rpx;
+}
+.youhui1{
+  width:750rpx;
+  height:390rpx;
+  display: flex;
+  flex-direction:column; 
+}
+.center{
+  width: 700rpx;
+  margin-left:25rpx; 
+  display: flex;
+  justify-content:space-between; 
+}
+.center1{
+  width:370rpx;
+  margin-left:25rpx; 
+  display: flex;
+  justify-content:space-between; 
+}
+.fukuan1{
+  position:relative;
+  top:54rpx; 
+}
+.fukuan2{
+  position:relative;
+  top:120rpx; 
+}
+.daifukuan1{
+  font-size:30rpx;
+  position:relative;
+  top:75rpx;
+}
+.daifukuan2{
+  font-size:30rpx;
+  margin-top:110rpx; 
+}
+.qiang{
+  width:750rpx;
+  height:188rpx;
+  margin-bottom:15rpx; 
+}
+.qiangimg{
+  width:750rpx;
+  height:188rpx;
+  display: block;
+}
+.jingxuan{
+  width: 750rpx;
+  height:110rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.xinkuai{
+  width:200rpx;
+  height:40rpx;
+ 
+  margin-top:35rpx; 
+  display: flex;
+  justify-content: space-between;
+}
+.xin{
+  width:37rpx;
+  height:37rpx;
+}
+.jing-text{
+  font-size:30rpx;
+  color:#ee3c30;
+}
+.bottom{
+  width:750rpx;
+  height:1000rpx;
+  background: red;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-box{
+  width:750rpx;
+  height:620rpx;
+  display: flex;
+  justify-content:space-between;
+}
+.bottom-lef{
+  width: 370rpx;
+  height:580rpx;
+  background:#FFF;
+}
+.bottom-rig{
+  width: 370rpx;
+  height:580rpx;
+  background: #fff;
+}
+.meimao{
+  width:370rpx;
+  height:370rpx;
+  display: block;
+}
+.meiguo{
+  text-align:center;
+  line-height: 65rpx;
+  font-size:25rpx;
+  margin-left:25rpx; 
+}
+.tuihuo{
+  width:280rpx;
+  height:35rpx;
+  margin-left:15rpx;
+  display: flex;
+  justify-content:space-between; 
+  margin-bottom:23rpx; 
+}
+.tuihuo-lef{
+  width: 140rpx;
+  height:35rpx;
+  line-height: 35rpx;
+  background: #ffebed;
+  color:#ff5412;
+  font-size:26rpx;
+  text-align: center;
+}
+.tuihuo-rig{
+  width: 115rpx;
+}
+.price-box{
+  width:280rpx;
+  height:40rpx;
+  margin-left:15rpx; 
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+  line-height: 40rpx;
+}
+.price{
+  color:#ea2e22;
+}
+.yijing{
+  color:#a8a8a8;
+}

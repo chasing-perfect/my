@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-popup": "/miniprogram_npm/vant-weapp/popup/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
+  }
 }

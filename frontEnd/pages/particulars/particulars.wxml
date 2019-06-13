@@ -5,12 +5,16 @@
     <image src=''></image>
     <!-- top -->
     <view class='top'>
-      <text class='btn'>返回</text>
+      <view class='btn diff'>
+        <van-icon name='arrow-left' color='#fff'></van-icon>
+      </view>
       <view class='part'>
-        <text class='car'>car</text>
+        <view class='car diff'>
+          <van-icon name='shopping-cart-o' color='#fff'></van-icon>>
+        </view>
         <view class='moreMeg'>
           <text>消息</text>
-          <text class='megNum'>00</text>
+          <text class='megNum diff'>00</text>
         </view>
       </view>
     </view>
@@ -57,7 +61,7 @@
         </view>
       </view>
       <view class='right'>
-      >
+        <van-icon name='arrow'></van-icon>
       </view>
     </view>
   
@@ -69,9 +73,9 @@
           <text>假一赔十</text>
           <text>全场包邮</text>
       </view>
-      <text class='jian'>
-      >
-      </text>
+      <view class='jian'>
+        <van-icon name='arrow'></van-icon>
+      </view>
     </view>
     <view class='pinPeople'>
       <view class='every'>
@@ -96,7 +100,12 @@
     <view class='appraise'>
       <view  class='shopAppraise'>
         <text class='shopLeft'>商品评价(8823)</text>
-        <text class='more'>查看更多 》 </text>
+        <view class='more'>
+      
+        <view>查看更多</view>
+        <van-icon name='arrow'></van-icon>
+        </view>
+
       </view>
       <view class='selectLook'>
         <view>
@@ -121,24 +130,24 @@
             <image src=''></image>
             <text class='wangName'>lorem fahwoe</text>
           </view>
-          <text class='content'>
+          <view class='content'>
             上坪确实是好的，谁上去确实是软的
             一脚水稻天亮
             二期我还得撒赖扩大发觉文字框cjvhq.na;w阿尔法和aaenfoiaisd
             啊v打开设置v阿飞离开
-          </text>
+          </view>
         </view>
          <view class='list'>
           <view class='per'>
             <image src=''></image>
             <text class='wangName'>lorem fahwoe</text>
           </view>
-          <text class='content'>
+          <view class='content'>
             上坪确实是好的，谁上去确实是软的
             一脚水稻天亮
             二期我还得撒赖扩大发觉文字框cjvhq.na;w阿尔法和aaenfoiaisd
             啊v打开设置v阿飞离开
-          </text>
+          </view>
         </view>
         <view class='watchMore'>查看更多</view>
       </view>
@@ -205,4 +214,58 @@
      <!-- 商品详情结束 -->
   </view>
   <!-- 拼单结束 -->
+  <!-- 导航开始 -->
+    <view class='my-nav'>
+      <view>
+        <van-icon name='wap-home' class='im' size='40rpx'></van-icon>
+        <text>首页</text>
+      </view>
+       <view>
+        <van-icon name='star-o' class='im' size='40rpx'></van-icon>
+        <text>收藏</text>
+      </view>
+       <view>
+    
+       <van-icon name='service-o' class='im' size='40rpx'></van-icon>
+        <text>客服</text>
+         
+      </view>
+       <view class='toPing'>
+        <!-- <text>40</text> -->
+        <text>发起拼单</text>
+      </view>
+       <view class='oneBuy'>
+        <!-- <text>30</text> -->
+        <text>单独购买</text>
+      </view>
+    
+       <view>
+      </view>
+    </view>
+  <!-- 导航结束 -->
+  <van-popup  position="bottom" show='true'>
+    <view class='selectType'>
+     <!-- 图片 -->
+      <view class='title-img allStyle'>
+        <view class='ige'>
+          <image src=''></image>
+        </view>
+       
+        <view class='priceAndSize'>
+          <text class='pr'>#38.8</text>
+          <text class='size'>请选择 尺寸</text>
+          <text class='clone'>x</text>
+        </view>
+      </view>
+       <!-- 颜色 -->
+        <view class='colors allStyle'>
+          <view class='color-tile'>颜色</view>
+          <view class='allColors'>
+            <view class='everyColors'>图片色</view>
+          </view>
+        </view>
+        <!-- 尺寸 -->
+        <!-- 数量 -->
+    </view>
+  </van-popup>
 </view>
