@@ -8,7 +8,7 @@ Page({
     isShow:true,
     data:[
       {
-        image:"",
+        image: "../base/image/zhen.jpg",
         title:"狼牙枕2",
         price: 238.00,
         color: "白色",
@@ -16,7 +16,7 @@ Page({
         checked:false
       },
       {
-        image: "",
+        image: "../base/image/zhen.jpg",
         title: "狼牙枕3",
         price: 238.00,
         color: "白色",
@@ -24,7 +24,7 @@ Page({
         checked: false
       },
       {
-        image: "",
+        image: "../base/image/zhen.jpg",
         title: "狼牙枕4",
         price: 238.00,
         color: "白色",
@@ -32,7 +32,7 @@ Page({
         checked: false
       },
       {
-        image: "",
+        image: "../base/image/zhen.jpg",
         title: "狼牙枕5",
         price: 238.00,
         color: "白色",
@@ -40,7 +40,7 @@ Page({
         checked: false
       },
       {
-        image: "",
+        image: "../base/image/zhen.jpg",
         title: "狼牙枕6",
         price: 238.00,
         color: "白色",
@@ -48,7 +48,7 @@ Page({
         checked: false
       },
       {
-        image: "",
+        image: "../base/image/zhen.jpg",
         title: "狼牙枕7",
         price: 238.00,
         color: "白色",

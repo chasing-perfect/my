@@ -39,6 +39,7 @@
   border-radius:14rpx;
 }
 .goodlist{
+  height: 100vh;
   padding-bottom:100rpx;
   background:#f7f7f7;
 }
@@ -48,6 +49,10 @@
   justify-content: space-between;
   background:#fff;
   margin-bottom:20rpx;
+}
+.goodlist .goodItem .icon-lajitong{
+  font-size: 44rpx;
+  margin-bottom: 21rpx;
 }
 .goodlist .goodItem .pic{
   width:180rpx;
@@ -122,13 +127,9 @@
   background:red;
   margin-bottom:21rpx;
 }
-.goodlist{
-  background:#f7f7f7;
-  padding-bottom:200rpx;
-}
 .accountBox{
   position:fixed;
-  bottom:100rpx;
+  bottom:0rpx;
   left:0;
   box-sizing:border-box;
   display:flex;

@@ -1,2 +1,0 @@
-<!--pages/main/main.wxml-->
-<tabbar totalCount='{{totalCount}}'></tabbar>

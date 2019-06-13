@@ -1,8 +1,19 @@
 <!--pages/account/account.wxml-->
 <view class='contain'>
   <view class='top'></view>
+  <!-- 选择地区 -->
   <view class='selectArea'>
-    请选择收货地址
+    <view class='areaBox'>
+      <view>
+        <image src='../base/image/area.png'></image>
+        <text>请选择收货地址</text>
+      </view>
+      <image src='../base/image/rights.png' class='you'></image>
+    </view>
+  </view>
+  <!-- 彩条 -->
+  <view class='colorBar'>
+    <image src='../base/image/colorBar.png'></image>
   </view>
   <!-- 商品 -->
   <view class='goodList'>
@@ -44,23 +55,22 @@
   </view>
   <!-- 支付 -->
   <view class='payBox'>
-    <view class='payItem'>
+    <view class='payItem' bindtap='chance1'>
       <view>
         <image src='../base/image/wx.png'></image>
         <text>微信支付</text>
       </view>
-      <image class='pic' src='../base/image/right.png'></image>
+      <image class='pic' src='../base/image/right.png' wx:if='{{currentIndex==0}}' ></image>
     </view>
-    <view class='payItem'>
+    <view class='payItem' bindtap='chance2'>
       <view>
         <image src='../base/image/fri.png'></image>
         <text>找微信好友支付</text>
       </view>
-      <image class='pic' src='../base/image/right.png'></image>
+      <image class='pic' src='../base/image/right.png' wx:if='{{currentIndex==1}}' ></image>
     </view>
   </view>
   <!-- 提交订单 -->
-  
   <view class='accountBox'>
     <view class='pay'>
       <text>应付款：</text>
@@ -68,6 +78,14 @@
     </view>
     <view class='goAccount'>
       <button class='accountBtn'>提交订单</button>
+    </view>
+  </view>
+  <!-- 遮罩 -->
+  <view class='cover'>
+    <view class='confirmBox'>
+      <view class='confirm-top'>
+        <text class='iconfont icon-shanchu1'></text>
+      </view>
     </view>
   </view>
 </view>

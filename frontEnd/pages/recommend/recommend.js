@@ -1,4 +1,4 @@
-// pages/main/main.js
+// pages/recommend/recommend.js
 Page({
 
   /**
