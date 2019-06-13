@@ -18,12 +18,13 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wx30b7121f2b588d89",
-	"projectname": "%E9%A1%B9%E7%9B%AE",
+	"appid": "wx0a78842772b012dd",
+	"projectname": "pdd",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -39,13 +40,38 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "recom",
+					"pathName": "pages/recom/recom",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "prc",
+					"pathName": "pages/prc/prc",
+					"scene": null
+				}
+			]
 		}
 	}
 }

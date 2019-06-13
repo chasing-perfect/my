@@ -1,14 +1,128 @@
 <!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class='wrap'>
+  <swiper indicator-dots="true"
+    autoplay="true" interval="2000" duration="1000" class='swiper'>
+    <block wx:for="{{imgUrls}}" class='swiperList'>
+      <swiper-item class='swiper-items'>
+        <image src="{{item}}" class="slide-image" width="355" height="150" class='swiper-img'/>
+      </swiper-item>
     </block>
+  </swiper>
+  <view class='putBox'>拼团</view>
+  <view class='listBox'>
+    <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <text class='text-decoration'>
+              包邮随身听夹子MP3包邮
+          </text>
+          <view class='text-intro'>
+              <view class='text-textBox'>
+                  <text class='text-price'><text class='icon'>￥</text>5</text>
+                  <text class='text-count'>已拼3.7万件</text>
+              </view>
+              <view class='smallImg-box'>
+                <image
+                    class='img img1'   
+                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+                </image>
+                <image 
+                    class='img img2'  
+                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
+                </image>
+              </view>
+          </view>
+        </view>
+        
+    </view>
+    <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <text class='text-decoration'>
+              包邮随身听夹子MP3包邮
+          </text>
+          <view class='text-intro'>
+              <view class='text-textBox'>
+                  <text class='text-price'><text class='icon'>￥</text>5</text>
+                  <text class='text-count'>已拼3.7万件</text>
+              </view>
+              <view class='smallImg-box'>
+                <image
+                    class='img img1'   
+                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+                </image>
+                <image 
+                    class='img img2'  
+                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
+                </image>
+              </view>
+          </view>
+        </view>
+        
+    </view>
+     <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <text class='text-decoration'>
+              包邮随身听夹子MP3包邮
+          </text>
+          <view class='text-intro'>
+              <view class='text-textBox'>
+                  <text class='text-price'><text class='icon'>￥</text>5</text>
+                  <text class='text-count'>已拼3.7万件</text>
+              </view>
+              <view class='smallImg-box'>
+                <image
+                    class='img img1'   
+                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+                </image>
+                <image 
+                    class='img img2'  
+                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
+                </image>
+              </view>
+          </view>
+        </view>
+        
+    </view>
+    <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <text class='text-decoration'>
+              包邮随身听夹子MP3包邮
+          </text>
+          <view class='text-intro'>
+              <view class='text-textBox'>
+                  <text class='text-price'><text class='icon'>￥</text>5</text>
+                  <text class='text-count'>已拼3.7万件</text>
+              </view>
+              <view class='smallImg-box'>
+                <image
+                    class='img img1'   
+                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+                </image>
+                <image 
+                    class='img img2'  
+                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
+                </image>
+              </view>
+          </view>
+        </view>
+        
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view> -->
-<view>首页</view>
+</view>
+
+
