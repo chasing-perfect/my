@@ -60,14 +60,14 @@
         <image src='../base/image/wx.png'></image>
         <text>微信支付</text>
       </view>
-      <image class='pic' src='../base/image/right.png' wx:if='{{currentIndex==0}}' ></image>
+      <image class='pic' src='../base/image/right.png' wx:if='{{currentIndex==0}}'></image>
     </view>
     <view class='payItem' bindtap='chance2'>
       <view>
         <image src='../base/image/fri.png'></image>
         <text>找微信好友支付</text>
       </view>
-      <image class='pic' src='../base/image/right.png' wx:if='{{currentIndex==1}}' ></image>
+      <image class='pic' src='../base/image/right.png' wx:if='{{currentIndex==1}}'></image>
     </view>
   </view>
   <!-- 提交订单 -->
@@ -85,7 +85,26 @@
     <view class='confirmBox'>
       <view class='confirm-top'>
         <text class='iconfont icon-shanchu1'></text>
+        <text class='iconfont icon-touxiang'></text>
+        <text>确认支付密码</text>
       </view>
+      <view class='totalInfo'>
+        <view class='Info'>
+          <text class='goodName'>煊赫门</text>
+          <view>
+            <text>￥</text>
+            <text>238.00</text>
+          </view>
+        </view>
+      </view>
+      <view class='payType'>
+        <view>
+          <text class='iconfont icon-yinhanglogo-'></text>
+          <text class='carName'>工商银行储蓄卡(***)</text>
+        </view>
+        <text class='rig'> > </text>
+      </view>
+      <button class='payBtn'>确认支付</button>
     </view>
   </view>
 </view>
