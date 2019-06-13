@@ -2,7 +2,7 @@
 <view class='particulars'>
   <!-- 头部开始 -->
   <view class='title-img'>
-    <image src=''></image>
+    <image src='./image/main.jpg'></image>
     <!-- top -->
     <view class='top'>
       <view class='btn diff'>
@@ -12,9 +12,9 @@
         <view class='car diff'>
           <van-icon name='shopping-cart-o' color='#fff'></van-icon>>
         </view>
-        <view class='moreMeg'>
+        <view class='moreMeg diff'>
           <text>消息</text>
-          <text class='megNum diff'>00</text>
+          <text class='megNum'>00</text>
         </view>
       </view>
     </view>
@@ -61,7 +61,7 @@
         </view>
       </view>
       <view class='right'>
-        <van-icon name='arrow'></van-icon>
+      >
       </view>
     </view>
   
@@ -74,7 +74,7 @@
           <text>全场包邮</text>
       </view>
       <view class='jian'>
-        <van-icon name='arrow'></van-icon>
+        >
       </view>
     </view>
     <view class='pinPeople'>
@@ -91,7 +91,7 @@
             <text class='chaPerson'>差3人拼成</text>
             <text class='times'>剩余<text>23:27:26</text></text>
           </view>
-          <view class='goPing'>去拼单</view>
+          <view class='goPing'  bindtap='shows'>去拼单</view>
         </view>
       </view>
 
@@ -100,12 +100,7 @@
     <view class='appraise'>
       <view  class='shopAppraise'>
         <text class='shopLeft'>商品评价(8823)</text>
-        <view class='more'>
-      
-        <view>查看更多</view>
-        <van-icon name='arrow'></van-icon>
-        </view>
-
+        <text class='more'>查看更多 》 </text>
       </view>
       <view class='selectLook'>
         <view>
@@ -150,7 +145,7 @@
           </view>
         </view>
         <view class='watchMore'>查看更多</view>
-      </view>
+      </view> 
 
     </view>
      <!-- 评价结束 -->
@@ -159,7 +154,7 @@
         <view class='shop-title'>
           商品详情
         </view>
-        <view class='shop-list'>
+        <!-- <view class='shop-list'>
           <view class='list-every'>
             <image src=''></image>
             <text class='shop-name'>乳胶</text>
@@ -208,12 +203,17 @@
               </view>
             </view>
           </view>
-          
-        </view>
+           
+        </view>-->
       </view>
      <!-- 商品详情结束 -->
   </view>
   <!-- 拼单结束 -->
+  <!-- 尾部开始 -->
+    <view class='end'>
+      <image src='./image/美容按摩枕详情页..jpg'></image>
+    </view>
+  <!-- 尾部结束 -->
   <!-- 导航开始 -->
     <view class='my-nav'>
       <view>
@@ -232,40 +232,61 @@
       </view>
        <view class='toPing'>
         <!-- <text>40</text> -->
-        <text>发起拼单</text>
+        <text  bindtap='shows'>发起拼单</text>
       </view>
        <view class='oneBuy'>
         <!-- <text>30</text> -->
-        <text>单独购买</text>
+        <text  bindtap='shows'>单独购买</text>
       </view>
     
        <view>
       </view>
     </view>
   <!-- 导航结束 -->
-  <van-popup  position="bottom" show='true'>
+  <!-- 模态框开始 -->
+  <van-popup  position="bottom" show="{{isShow}}">
+    <view class='kong'></view>
     <view class='selectType'>
      <!-- 图片 -->
-      <view class='title-img allStyle'>
+      <view class='title-img'>
         <view class='ige'>
-          <image src=''></image>
+          <view class='wp'>
+            <image src='./image/main.jpg'></image>
+          </view>
+          
         </view>
-       
         <view class='priceAndSize'>
           <text class='pr'>#38.8</text>
+          <text class='ku'>库存2343件</text>
           <text class='size'>请选择 尺寸</text>
-          <text class='clone'>x</text>
+        </view>
+        <view class='clone'>
+          <text bindtap='noShow'>x</text>
         </view>
       </view>
-       <!-- 颜色 -->
-        <view class='colors allStyle'>
-          <view class='color-tile'>颜色</view>
-          <view class='allColors'>
-            <view class='everyColors'>图片色</view>
+        <!-- 尺寸 -->
+        <view class='size'>
+          <view class='sizes'>尺寸</view>
+          <view class='allSize'>
+            <text>37</text>
+            <text>38</text>
+            <text>39</text>
           </view>
         </view>
-        <!-- 尺寸 -->
+        <!-- 颜色 -->
+       <view class='color'>
+          <view class='colors'>颜色</view>
+          <view class='allColor'>
+            <text>red</text>
+            <text>red</text>
+            <text>red</text>
+          </view>
+        </view>
         <!-- 数量 -->
+    
+    
     </view>
+    <view class='sub'>确定</view>
   </van-popup>
+  <!-- 模态框结束 -->
 </view>

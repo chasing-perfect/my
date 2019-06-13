@@ -1,0 +1,121 @@
+/* pages/couponCenter/CouponCenter.wxss */
+.coupon{
+  box-sizing: border-box;
+  height:100vh;
+  padding:50rpx 35rpx 28rpx 37rpx;
+  background:#f7f7f7;
+
+}
+.coupon .users{
+  display: flex;
+  height:50rpx;
+  width:100%;
+
+}
+.coupon .users .shu{
+  width:2rpx;
+  height:100%;
+  background:#f75f6a;
+
+}
+.coupon .users .nums{
+
+  height:100%;
+  margin-left:20rpx;
+  font-size:28rpx;
+  font-weight: bold;
+  line-height:50rpx;
+
+}
+.coupon .users .nums text{
+  color:#f75f6a;
+ 
+}
+  .coupon .everys{
+    display:flex;
+    width:100%;
+    height:205rpx;
+    box-shadow:4rpx 4rpx 2rpx 4rpx #ddd;
+    background:#fff;
+    margin-top:28rpx;
+  } 
+   .coupon .everys .couponLeft{
+     box-sizing: border-box;
+     align-items:center;
+     width:437rpx;
+     height:100%;
+     font-size:28rpx;
+     background:pink;
+     padding:37rpx 0 22rpx 0;
+    color: #ffffff;
+
+   } 
+  .coupon .everys .couponLeft view{
+    width:100%;
+    text-align: center;
+  } 
+    .coupon .everys .couponLeft .many{
+      font-size:28rpx;
+    }
+    .coupon .everys .couponLeft .many text{
+        font-size:46rpx;
+    }
+    .coupon .everys .couponLeft .guan{
+      font-size:46rpx;
+      font-weight:bold;
+    
+      margin-top:27rpx;
+    }
+
+   .coupon .everys .couponRight {
+     display: flex;
+     flex:1;
+
+   }
+    .coupon .everys .couponRight .nowUse{
+        width:190rpx;
+        height:53rpx;
+        border-radius:10rpx;
+        background-color:#fe002f;
+        margin:auto;
+        font-size:36rpx;
+        text-align: center;
+
+    }
+    .coupon .everys .couponLefts{
+    width:437rpx;
+    height:100%;
+    background:pink;
+   color: #ffffff;
+  } 
+ .coupon .everys .couponLefts .manys{
+   font-size:36rpx;
+   margin:23rpx 0 18rpx 25rpx;
+
+ }
+  .coupon .everys .couponLefts .guans{
+   margin-left:145rpx;
+   font-size:32rpx;
+   
+ }
+.everys .couponLefts .guans text{
+  font-size:44rpx;
+  font-weight: bold;
+} 
+.coupon .end{
+  display: flex;
+  justify-content: center;
+  margin-top:28rpx;
+  color:#dce4e0;
+  font-size:30rpx;
+}
+.coupon .end .no{
+  margin:35rpx 15rpx 0 0;
+
+}
+
+.coupon .end image{
+  width:110rpx;
+  height:67rpx;
+  background:pink;
+}

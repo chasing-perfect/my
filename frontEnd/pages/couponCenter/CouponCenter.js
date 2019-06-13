@@ -1,11 +1,11 @@
-// pages/particulars/particulars.js
+// pages/couponCenter/CouponCenter.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      isShow:false
+
   },
 
   /**
@@ -14,16 +14,7 @@ Page({
   onLoad: function (options) {
 
   },
-  shows:function (){
-    this.setData({
-      isShow:true
-    })
-  },
-  noShow:function (){
-    this.setData({
-      isShow:false
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

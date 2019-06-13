@@ -3,9 +3,11 @@
   width:100%;
   background-color: #f8f8f8;
 }
+
 /* 头部开始 */
 .particulars .title-img{
-  overflow:hidden;
+  display: flex;
+  justify-content: space-between;
   position:relative;
   font-family:"MicrosoftYaHei";
   color:#000;
@@ -16,6 +18,7 @@
   background:#f00;
 
 }
+
 .particulars .title-img .top{
   box-sizing:border-box;
   position:absolute;
@@ -52,7 +55,6 @@
   position:relative;
   width:76rpx;
   height:76rpx;
-
 }
 .particulars .title-img .top .part .moreMeg .megNum{
   position: absolute;
@@ -61,9 +63,15 @@
   transform:translateX(-50%);
   width:53rpx;
 	height:38rpx;
-	border-radius:10rpx;
-	background-color:"#fe4330";
+	border-radius:20rpx;
+  text-align: center;
+  line-height: 38rpx;
+	background-color:#fe4330;
+  color:#fff;
+  font-size:30rpx;
 }
+
+
 .particulars .title-img .bottom{
   position:absolute;
   bottom:42rpx;
@@ -73,19 +81,25 @@
   transform:translateX(-50%);
   width:191rpx;
   height:48rpx;
-
 }
 .particulars .title-img .bottom text{
   width:91rpx;
   height:100%;
-  border-radius:9;
-	background-color: "#ff3000";
+  border-radius:10rpx;	
   font-size:30rpx;
   text-align: center;
   line-height: 48rpx;
   color:#ffff;
 }
+.particulars .title-img .bottom .facade{
+  background:#ff3000;
+}
+.particulars .title-img .bottom .img{
+  background:rgba(255,255,255,.5);
+  color:#000;
+}
 /* 头部结束 */
+
 /* 信息开始 */
 .particulars .megs{
   box-sizing: border-box;
@@ -191,20 +205,28 @@
 	color:#505050;
   
 }
-.crowdordering .shipping-information .inforLeft text{
+.crowdordering .shipping-information .inforLeft >text{
   flex:1;
   text-align:center;
   line-height:69rpx;
+}
+.crowdordering .shipping-information .inforLeft text:nth-child(n)::before{
+   
+    display: inline-block;
+    width:40rpx;
+    height:69rpx;
+    line-height: 69rpx;
+    content:'.';
+    text-align: left;
+
 }
 .crowdordering .shipping-information .inforLeft text:nth-child(1)::before{
   display: inline-block;
   width:16rpx;
   height:69rpx;
-  background:#f00;
-} 
-
-
-
+  color:#f00;
+  content:'x';
+}
 .crowdordering .pinPeople{
   margin-top:10rpx;
   width:100%;
@@ -458,59 +480,72 @@
   color:#fff;
   font-size:28rpx;
 }
+
+
 /* 模态框开始 */  
 .selectType{
   width:100%;
 
 }
-.selectType .title-img{
-  position:relative;
-  display: flex;
-  width:100%;
-  
-}
-.selectType .title-img .ige{
-    position:absolute;
-    top:45%;
-    left:10rpx;
-    width:120rpx;
-    height:120rpx;
-    border-radius: 10rpx;
-    border:1rpx solid #ddd;
-    padding:5rpx;
-}
-.selectType .title-img image{
-  width:120rpx;
-  height:120rpx;
-  border-radius: 10rpx;
- 
+.van-popup--bottom{
+  overflow: visible!important;
 }
 
+/* .kong{
+  height:60rpx;
+  background-color:rgba(0,0,0,.1);
+} */
+.selectType .title-img{
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  padding:15rpx;
+}
+.selectType .title-img .ige{
+    width:240rpx;
+    border-radius: 10rpx;
+}
+.selectType .title-img .ige .wp{
+    position: absolute;
+    top:-60rpx;
+    left:10rpx;
+    width:240rpx;
+    height:240rpx;
+    padding:5rpx;
+    z-index:111;
+}
+.selectType .title-img .ige image{
+  width:240rpx;
+  height:240rpx;
+  border-radius: 10rpx;
+}
 .selectType .title-img .priceAndSize{
   padding-left:10rpx;
   flex-direction: column;
   justify-content: space-around;
   position:relative;
   flex:1;
-  font-size:16rpx;
+  margin-left:26rpx;
+}
+.selectType .title-img .priceAndSize text{
+  display: block;
+  height:55rpx;
+  line-height: 55rpx;
+  font-size:28rpx;
 }
 .selectType .title-img .priceAndSize .pr{
   color:#f00;
 }
 
-.selectType .title-img .priceAndSize .clone{
+.selectType .title-img  .clone{
   position: absolute;
   right:20rpx;
   top:15rpx;
 
 }
 
-/* <view class='colors allStyle'>
-          <view class='color-tile'>颜色</view>
-          <view class='allColors'>
-            <view class='everyColors'>图片色</view>
-          </view>
-        </view> */
 .selectType .colors{
   display:flex;
   flex-direction:column;
@@ -529,16 +564,46 @@
   border-radius: 5rpx;
 
 }
+.selectType .size,.selectType .color{
+  padding-left:12rpx;
+}
+.selectType .size .sizes,.selectType .color .colors{
+  height:105rpx;
+  font-size:30rpx;
+  font-weight: bold;
+  line-height:105rpx;
+}
+.selectType .size .allSize,.selectType .color .allColor{
+  display: flex;
+}
+.selectType .size .allSize text,.selectType .color .allColor text{
+  margin-right:50rpx;
+   width:192rpx;
+  height:44rpx;  
+  background:#dcdcdc;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 15rpx;
+  color:#2e2e2e;
 
+}
+.sub{
+  width:100%;
+  height:94rpx;
+  background:#fb3609;
+  color:#fff;
+  font-size:39rpx;
+  text-align:center;
+  line-height:94rpx;
+  margin-top:178rpx;
+}
+/* 结束 */
+.end{
+ height:16183rpx;
+ padding-bottom:97rpx;
+}
+.end image{
+  width:100%;
+  height:100%;
 
-
-
-
-
-
-
-
-.selectType .allStyle{
-border-bottom:1rpx solid #ddd;
-padding:15rpx 0 10rpx;
 }
