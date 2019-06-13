@@ -7,12 +7,15 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  discount(){
+    wx.navigateTo({
+      url: '../discount/discount'
+    })
+  },
   onLoad: function (options) {
-
+    wx.setNavigationBarTitle({
+      title: '首页',
+    })
   },
 
   /**

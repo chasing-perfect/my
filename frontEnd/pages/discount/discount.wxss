@@ -1,0 +1,139 @@
+.warp{
+  width:750rpx;
+  height: 1200rpx;
+  background: #f4f4f4;
+}
+.box{
+  width: 750rpx;
+  height:85rpx;
+  line-height: 85rpx;
+  background: #fff;
+}
+.big{
+  width: 650rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color:#6d6d6d;
+}
+.coupon{
+  width:750rpx;
+  height:1200rpx;
+ 
+  display: flex;
+  flex-direction:column;
+  align-items: center; 
+}
+.quan{
+  width: 260rpx;
+  height:200rpx;
+  margin-top:305rpx; 
+}
+.zanwu{
+  color:#9f9f9f;
+  line-height: 100rpx;
+  margin-bottom:10rpx; 
+  font-size:35rpx;
+  margin-left:-40rpx; 
+}
+.qianwang{
+  width:283rpx;
+  height:85rpx;
+  color:#fff;
+  background: #e62c1f;
+  font-size:30rpx;
+  text-align: center;
+  line-height: 85rpx;
+  border-radius: 5px;
+}
+.pushdown{
+  width:190rpx;
+  height: 45rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top:115rpx; 
+}
+.pushdown-img{
+  width:45rpx;
+  height: 45rpx;
+}
+.pushdown-text{
+  color:#bb3532;
+  font-size: 33rpx;
+}
+.bottom{
+  width:700rpx;
+  height: 325rpx;
+  background: #fff;
+  margin:0 auto; 
+  border-radius:20rpx; 
+  display: flex;
+}
+.bottom-left{
+  width:500rpx;
+  height:325rpx;
+  border-right:1px dashed #ccc;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+  .bottom-img{
+    width:200rpx;
+    height:170rpx;
+    display: block;
+  }
+  .bottom-kuai{
+    width:300rpx;
+    height:210rpx;
+  }
+  .bottom-text{
+    display: block;
+    width:250rpx;
+    margin:0 auto;
+    font-size:28rpx;
+  }
+  .bottom-xian{
+    width:160rpx;
+    height:40rpx;
+    background: #fff0e4;
+    color:#f49565;
+    line-height: 40rpx;
+    text-align: center;
+    border-radius:10rpx; 
+    margin-top:25rpx; 
+    margin-left:30rpx; 
+    margin-bottom:20rpx; 
+  }
+  .bottom-yidong{
+    color:#9b9b9b;
+    font-size:28rpx;
+    margin-left:30rpx; 
+  }
+  .bottom-right view{
+    text-align:center;
+    line-height:100rpx;
+    color:#f62a29;
+  }
+  .bottom-right text{
+    margin-left:20rpx;
+    line-height:60rpx;
+    color:#f62a29;
+  }
+  .btn{
+    width:150rpx;
+    height:70rpx;
+    background: #d6341f;
+    margin-left:20rpx; 
+    font-size:27rpx;
+    position: relative;
+    top:40rpx;
+    border-radius:10rpx;
+    line-height: 70rpx;
+  }
+  .btn text{
+   position: relative;
+   top:-10rpx;
+   left:-10rpx; 
+   color: #fff;  
+  }
+  
