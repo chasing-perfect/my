@@ -157,7 +157,6 @@
   align-items: center;
 }
 .goAccount button{
-  width:150rpx;
   height:70rpx;
   line-height:70rpx;
   background:#dc3025;
