@@ -5,8 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    //保存用户信息
-    user: {},
 
   },
 
@@ -16,17 +14,6 @@ Page({
   onLoad: function (options) {
 
   },
-  //获取用户信息
-  onGotUserInfo: function (e) {
-    console.log(e)
-    console.log(e.detail.errMsg) //提示信息
-    console.log(e.detail.userInfo) //用户信息
-    this.setData({
-      user: e.detail.userInfo
-    })
-    console.log(e.detail.rawData)  //
-  }, 
-  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

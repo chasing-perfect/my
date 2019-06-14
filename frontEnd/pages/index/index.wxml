@@ -1,128 +1,249 @@
 <!--index.wxml-->
 <view class='wrap'>
-  <swiper indicator-dots="true"
-    autoplay="true" interval="2000" duration="1000" class='swiper'>
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" class='swiper'>
     <block wx:for="{{imgUrls}}" class='swiperList'>
       <swiper-item class='swiper-items'>
-        <image src="{{item}}" class="slide-image" width="355" height="150" class='swiper-img'/>
+        <image src="{{item}}" class="slide-image" width="355" height="150" class='swiper-img' />
       </swiper-item>
     </block>
   </swiper>
-  <view class='putBox'>拼团</view>
-  <view class='listBox'>
-    <view class='items'>
-        <image
-          class='bgImg'  
-          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-        </image>
-        <view class='textBox'>
-          <text class='text-decoration'>
-              包邮随身听夹子MP3包邮
-          </text>
-          <view class='text-intro'>
-              <view class='text-textBox'>
-                  <text class='text-price'><text class='icon'>￥</text>5</text>
-                  <text class='text-count'>已拼3.7万件</text>
-              </view>
-              <view class='smallImg-box'>
-                <image
-                    class='img img1'   
-                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-                </image>
-                <image 
-                    class='img img2'  
-                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
-                </image>
-              </view>
-          </view>
-        </view>
-        
+  <!--拼团部分 开始-->
+  <view class='put'>
+    <view class='put-mainBox'>
+      <image class='put-mainBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+      </image>
     </view>
-    <view class='items'>
-        <image
-          class='bgImg'  
-          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+    <view class='put-joinBox'>
+      <view class='put-joinBox-alertBox'>
+        <image class='put-joinBox-alertBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
         </image>
-        <view class='textBox'>
-          <text class='text-decoration'>
-              包邮随身听夹子MP3包邮
-          </text>
-          <view class='text-intro'>
-              <view class='text-textBox'>
-                  <text class='text-price'><text class='icon'>￥</text>5</text>
-                  <text class='text-count'>已拼3.7万件</text>
-              </view>
-              <view class='smallImg-box'>
-                <image
-                    class='img img1'   
-                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-                </image>
-                <image 
-                    class='img img2'  
-                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
-                </image>
-              </view>
+        <view class='put-joinBox-alertBox-textBox'>
+          <text class='put-joinBox-alertBox-text'>
+                      双面乳胶设计呵护颈椎健康泰国乳胶薄款平面枕头
+                  </text>
+          <view class='put-joinBox-alertBox-priceBox'>
+            <view class='put-joinBox-alertBox-new'>
+              <text class='put-joinBox-i'>￥</text> 228
+            </view>
+            <view class='put-joinBox-alertBox-old'>
+              <text class='put-joinBox-i'>￥</text> 150
+            </view>
           </view>
+          <view class='put-joinBox-shoping'>限时抢购</view>
         </view>
-        
+      </view>
+      <view class='put-joinBox-headImgBoxList'>
+        <view class='put-joinBox-headImgBoxItems'>
+          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+          <view class='put-joinBox-iconText'>团长</view>
+        </view>
+        <view class='put-joinBox-headImgBoxItems'>
+          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+        </view>
+        <view class='put-joinBox-headImgBoxItems'>
+          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+        </view>
+        <view class='put-joinBox-headImgBoxItems'>
+          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+        </view>
+        <view class='put-joinBox-headImgBoxItems'>
+          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+        </view>
+      </view>
+      <text class='put-joinBox-rest'>仅剩<text class='put-num'>3</text>人,快呼唤小伙伴们来参加把！</text>
+      <view class='put-joinBox-restTime'>
+        <text class='put-joinBox-line'></text>
+        <view class='put-joinBox-time'>
+          <view class='rest'>剩余</view>
+          <view class='put-joinBox-t'>23</view>
+          <view class='put-joinBox-icon'>：</view>
+          <view class='put-joinBox-t'>23</view>
+          <view class='put-joinBox-icon'>：</view>
+          <view class='put-joinBox-t'>24</view>
+          <view class='rest2'>结束</view>
+        </view>
+        <text class='put-joinBox-line'></text>
+      </view>
     </view>
-     <view class='items'>
-        <image
-          class='bgImg'  
-          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-        </image>
-        <view class='textBox'>
-          <text class='text-decoration'>
-              包邮随身听夹子MP3包邮
-          </text>
-          <view class='text-intro'>
-              <view class='text-textBox'>
-                  <text class='text-price'><text class='icon'>￥</text>5</text>
-                  <text class='text-count'>已拼3.7万件</text>
-              </view>
-              <view class='smallImg-box'>
-                <image
-                    class='img img1'   
-                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-                </image>
-                <image 
-                    class='img img2'  
-                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
-                </image>
-              </view>
-          </view>
-        </view>
-        
-    </view>
-    <view class='items'>
-        <image
-          class='bgImg'  
-          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-        </image>
-        <view class='textBox'>
-          <text class='text-decoration'>
-              包邮随身听夹子MP3包邮
-          </text>
-          <view class='text-intro'>
-              <view class='text-textBox'>
-                  <text class='text-price'><text class='icon'>￥</text>5</text>
-                  <text class='text-count'>已拼3.7万件</text>
-              </view>
-              <view class='smallImg-box'>
-                <image
-                    class='img img1'   
-                    src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-                </image>
-                <image 
-                    class='img img2'  
-                    src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
-                </image>
-              </view>
-          </view>
-        </view>
-        
+    <view class='put-shareBox'>
+      <image class='put-shareBox-img' src='../../img/share.jpg'></image>
     </view>
   </view>
+  <!--拼团部分 结束-->
+  <!-- 详情部分 开始 -->
+  <view class='mydetail'>
+    <view class='mydetail-top'>
+      <image class='mydetail-top-img1' src='../../img/details-1.jpg'></image>
+      <image class='mydetail-top-img2' src='../../img/details-2.jpg'></image>
+      <image class='mydetail-top-img3' src='../../img/details-3.jpg'></image>
+    </view>
+    <view class='mydetail-bottom'>
+        <view class='detail-item'>
+            <text class='title'>美容按摩枕</text>
+            <image class='item-pic'                                             src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
+              </image>
+            <view class='descrip'>
+              <image src='../../img/icon-striped.jpg'></image>
+              <text class='item-price'><text>￥</text>238.00</text>
+              <button class='item-btn'>
+                立即购买
+                <text>123</text>
+              </button>
+            </view>
+        </view>
+        <view class='detail-item'>
+            <text class='title'>美容按摩枕</text>
+            <image class='item-pic'                                             src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
+              </image>
+            <view class='descrip'>
+              <image src='../../img/icon-striped.jpg'></image>
+              <text class='item-price'><text>￥</text>238.00</text>
+              <button class='item-btn'>
+                立即购买
+                <text>123</text>
+              </button>
+            </view>
+        </view>
+    </view>
+  </view>
+  <!-- 详情部分 结束 -->
+  <!-- 首页推荐部分 开始 -->
+  <view class='recomBox'>
+    <view class='detailBox' style='position:relative;margin-bottom:124rpx;'>
+      <image src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'></image>
+      <view class='contentBox'>
+        <view class='contentTop'>
+          <image src='../../img/el.png'></image>
+          <text>口碑珍品口碑珍品</text>
+          <image src='../../img/el.png'></image>
+        </view>
+        <image class='centerPic' src='../../img/englist-striped.jpg'></image>
+        <text class='contentText'>按实际立刻决定离开的空间弗</text>
+      </view>
+    </view>
+    <view class='detail-list'>
+      <view class='detail-item'>
+        <text class='title'>美容按摩枕</text>
+        <image class='item-pic' src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'></image>
+        <view class='descrip'>
+          <image src='../../img/icon-striped.jpg'></image>
+          <text class='item-price'><text>￥</text>238.00</text>
+          <button class='item-btn'>
+            立即购买
+            <text>123</text>
+          </button>
+        </view>
+      </view>
+      <view class='detail-item'>
+        <text class='title'>美容按摩枕</text>
+        <image class='item-pic' src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'></image>
+        <view class='descrip'>
+          <image src='../../img/icon-striped.jpg'></image>
+          <text class='item-price'><text>￥</text>238.00</text>
+          <button class='item-btn'>
+            立即购买
+            <text>123</text>
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class='recomBox-bgImgBox'>
+        <image src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'></image>
+    </view>
+    <view class='recomBox-rankBox'>
+        <view class='recomBox-rankBox-titleBox'>
+            <view class='recomBox-rankBox-rankTitle'>排行榜</view>
+            <view class='recomBox-rankBox-countTitle'>
+                <text class='act'>销量排行</text>
+                <text>销量排行</text>
+            </view>
+        </view>
+        <view class='recomBox-rankBox-listBox'>
+           
+            <view class='recomBox-rankBox-items'>
+                  <image class='recomBox-rankBox-items-img'
+                      src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'
+                  ></image>
+                  <view class='recomBox-rankBox-items-textBox'>
+                        <text class='recomBox-rankBox-items-name'>泰国乳胶按摩器</text>
+                        <text class='recomBox-rankBox-items-saleNum'>199人付款</text>
+                        <view class='recomBox-rankBox-items-sale'>1</view>
+                  </view>
+            </view>
+             <view class='recomBox-rankBox-items'>
+                  <image class='recomBox-rankBox-items-img'
+                      src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'
+                  ></image>
+                  <view class='recomBox-rankBox-items-textBox'>
+                        <text class='recomBox-rankBox-items-name'>泰国乳胶按摩器</text>
+                        <text class='recomBox-rankBox-items-saleNum'>199人付款</text>
+                        <view class='recomBox-rankBox-items-sale'>1</view>
+                  </view>
+            </view>
+             <view class='recomBox-rankBox-items'>
+                  <image class='recomBox-rankBox-items-img'
+                      src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'
+                  ></image>
+                  <view class='recomBox-rankBox-items-textBox'>
+                        <text class='recomBox-rankBox-items-name'>泰国乳胶按摩器</text>
+                        <text class='recomBox-rankBox-items-saleNum'>199人付款</text>
+                        <view class='recomBox-rankBox-items-sale'>1</view>
+                  </view>
+            </view>
+        </view>
+    </view>
+  </view>
+<!-- 首页推荐部分 结束 -->
+  <!--猜我喜欢 开始-->
+  <view class='likeBox'>
+      <view class='likeBox-titleBox'>猜你喜欢</view>
+      <view class='listBox'>
+        <view class='items' bindtap='goDetails'>
+          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+          <view class='textBox'>
+            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
+            <view><text class='text-t'>材料材料</text></view>
+            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
+          </view>
+
+        </view>
+        <view class='items'>
+          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+          <view class='textBox'>
+            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
+            <view><text class='text-t'>材料材料</text></view>
+            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
+          </view>
+
+        </view>
+        <view class='items'>
+          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+          <view class='textBox'>
+            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
+            <view><text class='text-t'>材料材料</text></view>
+            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
+          </view>
+
+        </view>
+        <view class='items'>
+          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+          </image>
+          <view class='textBox'>
+            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
+            <view><text class='text-t'>材料材料</text></view>
+            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
+          </view>
+
+        </view>
+      </view>
+  </view>
+  <!--猜我喜欢 结束-->
 </view>
-
-

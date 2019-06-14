@@ -12,6 +12,17 @@ Page({
 
 
   },
+
+  //点击跳转详情页
+  goDetails() {
+      wx.navigateTo({
+        url: '../details/details',
+      })
+  },
+
+
+
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
