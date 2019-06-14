@@ -5,9 +5,60 @@ Page({
    * 页面的初始数据
    */
   data: {
-      isShow:false
+      isShow:false,
+      mode:{
+          'image':'./image/main.jpg',
+          'title':'枕头',
+          'des':'新品正品魏太林，泰国正品波 浪按摩枕60*60',
+          'color':['红色','粉色','黑色','白色'],
+          'size': [27,28,29,30]
+      },
+      currentColor:'',
+      currentSize:'',
+      selectAll:{
+        'image': './image/main.jpg',
+        'title': '枕头',
+        'colors':'',
+        'sizes':''
+      }
+  },
+  toIndex:function (){
+    console.log(1)
+      wx.navigateTo({
+        url: '../index/index'
+      })
   },
 
+  selectSize:function (ev){
+      this.setData({
+        currentSize:ev.currentTarget.dataset.sizeindex
+      })  
+  },
+  selectColor:function (ev){
+    this.setData({
+      currentColor: ev.currentTarget.dataset.colorindex,
+    })
+  },
+  oks: function () {
+    //确定
+    //当前的颜色
+    let crs = this.data.mode.color[this.data.currentColor];
+    //当前得尺寸
+
+    let sis = this.data.mode.size[this.data.currentSize];
+    this.setData({
+      selectAll: {
+        'image': './image/main.jpg',
+        'title': '枕头',
+        'count':1,
+        'colors': crs,
+        'sizes': sis
+      }
+    })
+    wx.navigateTo({
+      url: '../account/account?data='+JSON.stringify(this.data.selectAll)
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -24,6 +75,7 @@ Page({
       isShow:false
     })
   },
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

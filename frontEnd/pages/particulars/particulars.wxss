@@ -550,7 +550,7 @@
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  font-size:16rpx;
+  font-size:13rpx;
 }
 .selectType .colors .allColors{
   display: flex;
@@ -569,7 +569,7 @@
 }
 .selectType .size .sizes,.selectType .color .colors{
   height:105rpx;
-  font-size:30rpx;
+  font-size:36rpx;
   font-weight: bold;
   line-height:105rpx;
 }
@@ -577,8 +577,9 @@
   display: flex;
 }
 .selectType .size .allSize text,.selectType .color .allColor text{
+  display: inline-block;
   margin-right:50rpx;
-   width:192rpx;
+  width:192rpx;
   height:44rpx;  
   background:#dcdcdc;
   text-align: center;

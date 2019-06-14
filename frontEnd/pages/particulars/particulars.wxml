@@ -2,7 +2,7 @@
 <view class='particulars'>
   <!-- 头部开始 -->
   <view class='title-img'>
-    <image src='./image/main.jpg'></image>
+    <image src='{{mode.image}}'></image>
     <!-- top -->
     <view class='top'>
       <view class='btn diff'>
@@ -28,7 +28,7 @@
   <!-- 详情信息开始 -->
   <view class='megs'>
     <view class='meger'>
-      <text class='txt'>新款正品魏太林，洒在动静分区五年；埃尔开发贷款你可知道次哦v</text>
+      <text class='txt'>{{mode.des}}</text>
       <text class='share'>分享</text>
     </view>
     <view class='price'>
@@ -216,7 +216,7 @@
   <!-- 尾部结束 -->
   <!-- 导航开始 -->
     <view class='my-nav'>
-      <view>
+      <view bindtap='toIndex'>
         <van-icon name='wap-home' class='im' size='40rpx'></van-icon>
         <text>首页</text>
       </view>
@@ -268,25 +268,22 @@
         <view class='size'>
           <view class='sizes'>尺寸</view>
           <view class='allSize'>
-            <text>37</text>
-            <text>38</text>
-            <text>39</text>
+            <text wx:for='{{mode.size}}' wx:key='{{index}}' bindtap='selectSize' data-sizeIndex='{{index}}'>{{item}}</text>
+           
           </view>
         </view>
         <!-- 颜色 -->
        <view class='color'>
           <view class='colors'>颜色</view>
           <view class='allColor'>
-            <text>red</text>
-            <text>red</text>
-            <text>red</text>
+            <text wx:for='{{mode.color}}' wx:key='{{index}}' bindtap='selectColor' data-colorIndex='{{index}}'>{{item}}</text>
           </view>
         </view>
         <!-- 数量 -->
     
     
     </view>
-    <view class='sub'>确定</view>
+    <view class='sub' bindtap='oks'>确定</view>
   </van-popup>
   <!-- 模态框结束 -->
 </view>
