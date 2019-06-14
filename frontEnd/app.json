@@ -5,20 +5,14 @@
     "pages/logs/logs",
     "pages/shoppingCart/shoppingCart",
     "pages/mine/mine",
-<<<<<<< HEAD
     "pages/commoditydetails/commoditydetails",
     "pages/browsing/browsing",
     "pages/refund/refund",
     "pages/coupon/coupon",
     "pages/order/order",
-
     "pages/account/account",
-    "pages/recommend/recommend"
-
-=======
     "pages/recom/recom",
     "pages/prc/prc"
->>>>>>> 89150c1d7fd225144cbe5c27465d8db24497ce2d
   ],
       "permission": {
         "scope.userLocation": {
@@ -31,14 +25,6 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-<<<<<<< HEAD
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
-    }
-  },
-=======
->>>>>>> 89150c1d7fd225144cbe5c27465d8db24497ce2d
   "tabBar": {
     "color": "#000",
     "selectColor": "#f00",
@@ -48,13 +34,10 @@
         "text": "首页"
       },
       {
-<<<<<<< HEAD
-        "pagePath": "pages/recommend/recommend",
+        "pagePath": "pages/recom/recom",
         "text": "推荐"
       },
       {
-=======
->>>>>>> 89150c1d7fd225144cbe5c27465d8db24497ce2d
         "pagePath": "pages/shoppingCart/shoppingCart",
         "text": "购物车"
       },
@@ -63,13 +46,10 @@
         "text": "个人中心"
       }
     ]
-<<<<<<< HEAD
   },
     "permission": {
       "scope.userLocation": {
         "desc": "你的位置信息将用于小程序位置接口的效果展示"
       }
-=======
->>>>>>> 89150c1d7fd225144cbe5c27465d8db24497ce2d
   }
 }

@@ -15,7 +15,7 @@ Page({
   //点击跳转详情页
   goDetails() {
       wx.navigateTo({
-        url: '../details/details',
+        url: '../particulars/particulars',
       })
   },
 
@@ -29,6 +29,13 @@ Page({
     })
   },
   onLoad: function () {
+
+    //设置title
+    wx.setNavigationBarTitle({
+      title: '智能家居生态馆',
+    })
+
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
