@@ -50,7 +50,6 @@
 }
 .ding .ding-list .lists .list-top .listReight .txt .theme{
   font-size:26rpx;
-	line-height:20rpx;
 	color: #383a3a;
 }
 .ding .ding-list .lists .list-top .listReight .txt .theme-bottom{
