@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 .ding{
   width:100%;
@@ -246,8 +245,7 @@
   height:30rpx;
   background:#f2f2f2;
 
-=======
-/* pages/ding/ding.wxss */
+}
 .ding{
   width:100%;
 }
@@ -369,5 +367,5 @@
 .ding .ding-list .lists .tops{
   height:30rpx;
   background:#f2f2f2;
->>>>>>> 72ba84be5559380a5216a9ce1b535c7984172a6b
+
 }

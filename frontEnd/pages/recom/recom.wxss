@@ -1,0 +1,60 @@
+/* pages/recom/recom.wxss */
+.recom {
+  height: 100vh;
+}
+.recom .recom-imgBox {
+  width: 100%;
+  height: 340rpx;
+  margin-bottom: 34rpx;
+}
+.recom .recom-imgBox .recom-img{
+  width: 100%;
+  height: 100%;
+}
+.recom .recomList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.recom .recomList .items{
+  width: 340rpx;
+  height: 520rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+  border: 2rpx solid #f9f9f9;
+  border-radius: 6rpx;
+  box-shadow: 0 0 0 1rpx #ccc;
+}
+.recom .recomList .items .bgImg{
+  width: 340rpx;
+  height: 300rpx;
+}
+.recom .recomList .items .textBox {
+  height: 223rpx;
+  box-sizing: border-box;
+  padding: 61rpx 0 14rpx 11rpx;
+}
+.recom .recomList .items .textBox .text-name {
+  height: 34rpx;
+  color: #333333;
+  font-size: 34rpx;
+  margin-bottom: 15rpx;
+}
+.recom .recomList .items .textBox .text-decoration {
+  height: 24rpx;
+  color: #999999;
+  font-size: 24rpx;
+  margin-bottom: 26rpx;
+}
+.recom .recomList .items .textBox .text-intro {
+  /* background: olive; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+ .recom .recomList .items .text-intro .text-price {
+  color: #df0000;
+  font-size: 32rpx;
+}

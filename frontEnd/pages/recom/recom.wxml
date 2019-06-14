@@ -1,0 +1,66 @@
+<!--pages/recom/recom.wxml-->
+<view class='recom'>
+  <view class='recom-imgBox'>
+      <image 
+        class='recom-img'
+        src= 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640'>
+      </image>
+  </view>
+  <view class='recomList'>
+    <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <view class='text-name'>泰国波浪平面枕</view>
+          <view class='text-decoration'>包邮随身听夹子MP3包邮</view>
+          <view class='text-intro'>
+              <text class='text-price'><text class='icon'>￥</text>238</text>
+          </view>
+        </view>
+    </view>
+    <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <view class='text-name'>泰国波浪平面枕</view>
+          <view class='text-decoration'>包邮随身听夹子MP3包邮</view>
+          <view class='text-intro'>
+              <text class='text-price'><text class='icon'>￥</text>238</text>
+          </view>
+        </view>
+        
+    </view>
+     <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <view class='text-name'>泰国波浪平面枕</view>
+          <view class='text-decoration'>包邮随身听夹子MP3包邮</view>
+          <view class='text-intro'>
+              <text class='text-price'><text class='icon'>￥</text>238</text>
+          </view>
+        </view>
+        
+    </view>
+     <view class='items'>
+        <image
+          class='bgImg'  
+          src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
+        </image>
+        <view class='textBox'>
+          <view class='text-name'>泰国波浪平面枕</view>
+          <view class='text-decoration'>包邮随身听夹子MP3包邮</view>
+          <view class='text-intro'>
+              <text class='text-price'><text class='icon'>￥</text>238</text>
+          </view>
+        </view>
+        
+    </view>
+  </view>
+</view>
