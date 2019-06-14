@@ -10,6 +10,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -18,17 +19,17 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"nodeModules": true
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
 	"appid": "wx81c609676c0b85cd",
 	"projectname": "%E9%A1%B9%E7%9B%AE",
+	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
+	"scripts": {},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -45,16 +46,44 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
-					"name": "aaa",
-					"pathName": "pages/weizhi/weizhi",
+					"name": "bbbb",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cccc",
+					"pathName": "pages/commoditydetails/commoditydetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "ddd",
+					"pathName": "pages/browsing/browsing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ffff",
+					"pathName": "pages/refund/refund",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ggg",
+					"pathName": "pages/ coupon/coupon",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -1,0 +1,73 @@
+.warp{
+  width:750rpx;
+  height:1000rpx;
+  
+}
+.box{
+  width:700rpx;
+  height: 265rpx;
+  background:#fff;
+  box-shadow: 3rpx 3rpx 3rpx 0rpx #ddd;
+  margin-left:25rpx; 
+  margin-top:20rpx;
+  margin-bottom:30rpx; 
+  box-sizing: border-box;
+}
+.big{ 
+  display: flex;
+  justify-content:space-between;
+  padding:20rpx 0rpx 40rpx 14rpx; 
+  box-sizing: border-box;
+}
+.big-left{
+  width:190rpx;
+  height:199rpx;
+  background: red;
+}
+.big-logo{
+  width:190rpx;
+  height:199rpx;
+  border-radius: 10rpx;
+}
+.big-right{
+  width:460rpx;
+  padding-top:15rpx;
+  box-sizing: border-box;
+}
+.big-text{
+  font-size:26rpx;
+  display: block;
+  width:430rpx;
+}
+.big-shou{
+  color:#ff3f3f;
+  display: block;
+  font-size:18rpx;
+  padding-top:14rpx;
+  box-sizing: border-box; 
+}
+.big-price{
+  color:#ff3f3f;
+  font-size:28rpx;
+  padding-top:55rpx;
+  display: block; 
+}
+.big-cang{
+  display: block;
+  font-size:22rpx;
+  color:#cdcdcd;
+  position:relative;
+  bottom: 25rpx;
+  left:310rpx;
+}
+.big-bottom{
+  width:420rpx;
+  height:28rpx;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.big-1{
+  font-size:23rpx;
+  color:#9c9f9e;
+}

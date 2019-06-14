@@ -1,145 +1,84 @@
 <view class="warp">
   <view class="goudan">
     <view class="box">
-      <view class="warp-left">
-        <image src="./image/未标题-1.gif" class="logo"></image>
-      <view class="box-text">
-        <text class="text">苏轼李白</text>
-        <view class="gengxin">更新资料</view>
-      </view>
-     </view>
-    <view class="warp-right">
-      <image src="./image/hong.gif" class="hong"></image>
-      <text class="pindan">拼单返现</text>
+      <image src="./image/left.gif" class="box-logo"></image>
+      <image src="./image/right.gif" class="box-logo"></image>
     </view>
+    <view class="warp-logo">
+       <image src="./image/未标题-1.gif" class="logo"></image> 
+    </view>
+    <text class="warp-text">苏轼李白</text>
   </view>
-    <view class="image">
-      <image src="./image/pinpai.gif"></image>
-    </view>
-    <!-- 我的订单 -->
-    <view class="wode">
-      <text class="dingdan">我的订单</text>
-      <text class="quanbu">查看全部  ></text>
-    </view>
-    <view class="box-bottom">
-      <view class="shangxia">
-        <image src="./image/fukuan.gif" class="fukuan"></image>
-        <text class="daifukuan">待付款</text>
+  <view class="order">
+    <view class="order-auto">
+      <view class="order-left" bindtap='order'>
+        <image src="./image/dingdan.gif" class="order-logo"></image>  
+        <text class="order-text">我的订单</text>
       </view>
-       <view class="shangxia">
-        <image src="./image/fenxiang.gif" class="fukuan"></image>
-        <text class="daifukuan">待分享</text>
-      </view>
-       <view class="shangxia">
-        <image src="./image/fahuo.gif" class="fukuan"></image>
-        <text class="daifukuan">待发货</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/shouhuo.gif" class="fukuan"></image>
-        <text class="daifukuan">待收货</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/bbb.gif" class="fukuan"></image>
-        <text class="daifukuan">待评价</text>
+      <view class="order-right">
+        <text class="order-rig-text">查看全部订单</text>
+        <image src="./image/fanhui.gif" class="order-rig-logo"></image>
       </view>
     </view>
-  </view>
-   <view class="youhui">
-    <view class="center">
-      <view class="shangxia" bindtap='discount'>
-        <image src="./image/youhuiquan.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">优惠券</text>
+    <view class="stay">
+      <view class="stay-box">
+        <view class="stay-column">
+          <image src="./image/daifukuan.gif" class="stay-logo"></image>
+          <text class="stay-text">待付款</text>
+        </view>
+        <view class="stay-column">
+          <image src="./image/daifenxiang.gif" class="stay-logo"></image>
+          <text class="stay-text">待付款</text>
+        </view>
+        <view class="stay-column">
+          <image src="./image/daifahuo.gif" class="stay-logo"></image>
+          <text class="stay-text">待发货</text>
+        </view>
+         <view class="stay-column">
+          <image src="./image/daifahuo1.gif" class="stay-logo"></image>
+          <text class="stay-text">待发货</text>
+        </view>
+        <view class="stay-column">
+          <image src="./image/daipingjia.gif" class="stay-logo"></image>
+          <text class="stay-text">待评价</text>
+        </view>
       </view>
-      <view class="shangxia">
-        <image src="./image/shoucang.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">商品收藏</text>
+      <view class="discount" bindtap='coupon'>
+        <view class="discount-box">
+          <view class="discount-left">
+            <image src="./image/youhuiquan.gif" class="discount-logo"></image>
+            <text class="discount-text">优惠券</text>
+          </view>
+         <image src="./image/fanhui.gif" class="order-rig-logo order-rig-logo1"></image>
+        </view>
       </view>
-      <view class="shangxia">
-        <image src="./image/dianpu.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">店铺收藏</text>
+      <view class="discount" bindtap='commoditydetails'>
+        <view class="discount-box">
+          <view class="discount-left">
+            <image src="./image/shoucang.gif" class="discount-logo"></image>
+            <text class="discount-text">商品收藏</text>
+          </view>
+         <image src="./image/fanhui.gif" class="order-rig-logo order-rig-logo1"></image>
+        </view>
       </view>
-       <view class="shangxia">
-        <image src="./image/liuran.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">历史浏览</text>
+      <view class="discount" bindtap='browsing'>
+        <view class="discount-box">
+          <view class="discount-left">
+            <image src="./image/liulan.gif" class="discount-logo"></image>
+            <text class="discount-text">历史浏览</text>
+          </view>
+          <image src="./image/fanhui.gif" class="order-rig-logo order-rig-logo1"></image>
+        </view>
       </view>
-      <view class="shangxia">
-        <image src="./image/shaohou.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">退款售后</text>
-      </view>
-    </view>
-  </view>
-  <view class="youhui youhui1">
-    <view class="center">
-      <view class="shangxia">
-        <image src="./image/1yangou.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">新人1元购</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/guoyuan.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">多多果园</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/mianfeina.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">砍价免费拿</text>
-      </view>
-       <view class="shangxia">
-        <image src="./image/dizhi.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">收货地址</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/feiji.gif"class="fukuan fukuan1"></image>
-        <text class="daifukuan daifukuan1">多多旅行</text>
-      </view>
-    </view>
-    <view class="center center1">
-      <view class="shangxia">
-        <image src="./image/pingjia.gif"class="fukuan fukuan2"></image>
-        <text class="daifukuan daifukuan2">我的评价</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/kefu.gif"class="fukuan fukuan2"></image>
-        <text class="daifukuan daifukuan2">官方客服</text>
-      </view>
-      <view class="shangxia">
-        <image src="./image/shezhi.gif"class="fukuan fukuan2"></image>
-        <text class="daifukuan daifukuan2">设置</text>
+      <view class="discount" bindtap='refund'>
+        <view class="discount-box">
+          <view class="discount-left">
+            <image src="./image/tui.gif" class="discount-logo"></image>
+            <text class="discount-text">退款售后</text>
+          </view>
+         <image src="./image/fanhui.gif" class="order-rig-logo order-rig-logo1" ></image>
+        </view>
       </view>
     </view>
   </view>
- <view class="qiang">
-  <image src="./image/qiang.gif" class="qiangimg"></image>
- </view>
- <view class="jingxuan">
-    <view class="xinkuai">
-      <image src="./image/xin.gif" class="xin"></image>
-      <text class="jing-text">精选推存</text>
-    </view>
- </view>
- <view class="bottom">
-   <view class="bottom-box">
-    <view class="bottom-lef">
-      <image src="./image/meimao.gif" class="meimao"></image>
-      <text class='meiguo'>【美国进口】 fem漂胡剂去小</text>
-      <view class="tuihuo">
-        <text class="tuihuo-lef">退货包邮费</text>
-        <text class="tuihuo-lef tuihuo-rig">满30返2</text>
-      </view>
-      <view class="price-box">
-        <text class="price">￥28.88</text>
-        <text class="yijing">已拼1.5万件</text>
-      </view>
-    </view>
-    <view class="bottom-rig">
-       <image src="./image/yizhichun.gif" class="meimao"></image>
-      <text class='meiguo'>金蚕丝蛋白护肤品套装补水美</text>
-      <view class="tuihuo">
-        <text class="tuihuo-lef tuihuo-rig">满60返3</text>
-      </view>
-      <view class="price-box">
-        <text class="price">￥188</text>
-        <text class="yijing">已拼66件</text>
-      </view>
-    </view>
-   </view>
- </view>
 </view>

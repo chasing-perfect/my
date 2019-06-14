@@ -1,0 +1,119 @@
+.warp{
+  width:750rpx;
+  height:1180rpx;
+  background:#f2f2f2;
+}
+.box{
+  width: 700rpx;
+  height:465rpx;
+  background: #fff;
+  margin-left:25rpx; 
+  border-radius: 20rpx;
+  position:relative;
+  top:16rpx;
+  bottom: 37rpx;
+}
+.big{
+    height:370rpx;
+    border-bottom: 1px solid #ebebeb;
+}
+.big-padd{
+  padding: 43rpx 32rpx 0rpx 17rpx;
+  display: flex;
+  flex-direction: column;
+}
+.big-box{
+  width:316rpx;
+  height:38rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:30rpx; 
+}
+.big-logo{
+  width:38rpx;
+  height:38rpx;
+  display: block;
+}
+.big-text{
+  font-size:24rpx;
+  line-height: 38rpx;
+}
+.big-fan{
+  width:14rpx;
+  height:24rpx;
+  margin-top:7rpx; 
+
+}
+.big-bottom{
+  width:652rpx;
+  height:258rpx;
+}
+.big-top{
+  width:652rpx;
+  height:180rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:35rpx; 
+}
+.big-top-logo{
+  width:180rpx;
+  height:180rpx;
+  background: red;
+  border-radius: 15rpx;
+}
+.big-rig{
+  width:455rpx;
+  height:180rpx;
+ 
+}
+.goudan{
+  height:60rpx;
+  font-size:25rpx;
+  display: block;
+}
+.big-liu{
+  font-size:19rpx;
+  margin-top:45rpx; 
+  display:block;
+}
+.big-rui{
+  width:185rpx;
+  height:40rpx;
+  display:flex;
+  justify-content: space-between;
+  line-height: 40rpx;
+}
+.big-bott{
+  display: flex;
+  justify-content: space-between;
+}
+.big-yao{
+  width:30rpx;
+  height:30rpx;
+  display: block;
+}
+.big-shu{
+  font-size:20rpx;
+  color:#9c9a9a;
+}
+.big-yue{
+  width:187rpx;
+  height:40rpx;
+  line-height: 40rpx;
+}
+.big-zheng{
+  font-size:21rpx;
+  display: block; 
+}
+.big-jin{
+  width:144rpx;
+  height: 55rpx;
+  border:1px solid #da2015;
+  border-radius: 30rpx;
+  color:#da2015;
+  font-size:25rpx;
+  text-align: center;
+  line-height:55rpx;
+  margin-top:20rpx; 
+  margin-left:500rpx; 
+}

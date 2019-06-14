@@ -12,10 +12,33 @@ Page({
       url: '../discount/discount'
     })
   },
-  onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '首页',
+  commoditydetails(){
+    wx.navigateTo({
+      url: '../commoditydetails/commoditydetails'
     })
+  },
+  browsing() {
+    wx.navigateTo({
+      url: '../browsing/browsing'
+    })
+  },
+  refund(){
+    wx.navigateTo({
+      url: '../refund/refund'
+    })
+  },
+  coupon(){
+    wx.navigateTo({
+      url: '../coupon/coupon'
+    })
+  },
+  order(){
+    wx.navigateTo({
+      url: '../order/order'
+    })
+  },
+  onLoad: function (options) {
+   
   },
 
   /**

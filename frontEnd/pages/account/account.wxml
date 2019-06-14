@@ -1,0 +1,73 @@
+<!--pages/account/account.wxml-->
+<view class='contain'>
+  <view class='top'></view>
+  <view class='selectArea'>
+    请选择收货地址
+  </view>
+  <!-- 商品 -->
+  <view class='goodList'>
+    <view class='goodItem'>
+      <image class='pic'></image>
+      <view class='descript'>
+        <text>狼牙枕</text>
+        <text>米色</text>
+      </view>
+      <view class='itemInfo'>
+        <text>共1件</text>
+        <text>￥238.00</text>
+      </view>
+    </view>
+  </view>
+  <!-- 优惠 -->
+  <view class='discounts'>
+    <text class='discount'>优惠</text>
+    <view>
+      <text>0张可用</text>
+      <text> > </text>
+    </view>
+  </view>
+  <!-- 商品总额+运费 -->
+  <view class='totalBox'>
+    <view>
+      <text>商品总额</text>
+      <text>￥238.00</text>
+    </view>
+    <view>
+      <text>运费</text>
+      <text>￥0.00</text>
+    </view>
+  </view>
+  <!-- 留言 -->
+  <view class='message'>
+    <text>留言</text>
+    <input placeholder='给卖家留言'></input>
+  </view>
+  <!-- 支付 -->
+  <view class='payBox'>
+    <view class='payItem'>
+      <view>
+        <image src='../base/image/wx.png'></image>
+        <text>微信支付</text>
+      </view>
+      <image class='pic' src='../base/image/right.png'></image>
+    </view>
+    <view class='payItem'>
+      <view>
+        <image src='../base/image/fri.png'></image>
+        <text>找微信好友支付</text>
+      </view>
+      <image class='pic' src='../base/image/right.png'></image>
+    </view>
+  </view>
+  <!-- 提交订单 -->
+  
+  <view class='accountBox'>
+    <view class='pay'>
+      <text>应付款：</text>
+      <text class='pay'>￥238.00</text>
+    </view>
+    <view class='goAccount'>
+      <button class='accountBtn'>提交订单</button>
+    </view>
+  </view>
+</view>

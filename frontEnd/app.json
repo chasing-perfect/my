@@ -5,13 +5,16 @@
     "pages/shoppingCart/shoppingCart",
     "pages/mine/mine",
     "pages/recommend/recommend",
-    "pages/weizhi/weizhi",
-    "pages/shangla/shangla"
+    "pages/account/account",
+    "pages/commoditydetails/commoditydetails",
+    "pages/browsing/browsing",
+    "pages/refund/refund",
+    "pages/coupon/coupon",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

@@ -1,0 +1,7 @@
+<!--components/tabbar/tabbar.wxml-->
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o"><navigator url="/pages/index/index">首页</navigator></van-tabbar-item>
+  <van-tabbar-item icon="search"><navigator url="/pages/logs/logs">新品</navigator></van-tabbar-item>
+  <van-tabbar-item icon="friends-o" info="{{totalCount}}"><navigator url="/pages/shoppingCart/shoppingCart?title=redirect" open-type="redirect">购物车</navigator></van-tabbar-item>
+  <van-tabbar-item icon="setting-o"><navigator url="/pages/mine/mine">我的</navigator></van-tabbar-item>
+</van-tabbar>

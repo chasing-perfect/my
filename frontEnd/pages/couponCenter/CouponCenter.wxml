@@ -1,0 +1,69 @@
+<!--pages/couponCenter/CouponCenter.wxml-->
+<view class='coupon'>
+  <view class='users'>
+    <view class='shu'></view>
+    <view class='nums'>
+     可用红包<text>5</text>个
+    </view>
+  </view>
+  <view class='list'>
+    <view class='everys'>
+        <view class='couponLeft'>
+          <view class='many'>
+            <text class='manys'>￥5</text>
+            购物车
+          </view>
+          <view class='guan'>收藏+关注</view>
+        </view>
+        <view class='couponRight'>
+          <text class='nowUse'>立即使用</text>
+        </view>
+    </view>
+    <view class='everys'>
+        <view class='couponLefts'>
+          <view class='manys'>
+            满199立减
+          </view>
+          <view class='guans'>
+            ￥<text class='manys'>5</text>
+            购物券
+          </view>
+        </view>
+        <view class='couponRight'>
+          <text class='nowUse'>立即使用</text>
+        </view>
+    </view>
+    <view class='everys'>
+        <view class='couponLefts'>
+          <view class='manys'>
+            满199立减
+          </view>
+          <view class='guans'>
+            ￥<text class='manys'>5</text>
+            购物券
+          </view>
+        </view>
+        <view class='couponRight'>
+          <text class='nowUse'>立即使用</text>
+        </view>
+    </view>
+    <view class='everys'>
+        <view class='couponLefts'>
+          <view class='manys'>
+            满199立减
+          </view>
+          <view class='guans'>
+            ￥<text class='manys'>5</text>
+            购物券
+          </view>
+        </view>
+        <view class='couponRight'>
+          <text class='nowUse'>立即使用</text>
+        </view>
+    </view>
+  </view>
+  <view class='end'>
+    <view class='no'>没有更多了</view>
+    <image src='./image/ele.png'></image>
+  </view>
+</view>
