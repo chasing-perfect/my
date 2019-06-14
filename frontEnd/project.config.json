@@ -23,7 +23,15 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
+<<<<<<< HEAD
 	"appid": "wx81c609676c0b85cd",
+=======
+<<<<<<< HEAD
+	"appid": "wxd7328dc87eeaaf72",
+=======
+	"appid": "wx81c609676c0b85cd",
+>>>>>>> 8ac54dfc550c8e0314be042e70dcc17707d29eda
+>>>>>>> 25e7f785cb1baac93a26e8866e25773340f508a7
 	"projectname": "%E9%A1%B9%E7%9B%AE",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
@@ -49,7 +57,12 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": -1,
+=======
+<<<<<<< HEAD
+			"current": 3,
+>>>>>>> 25e7f785cb1baac93a26e8866e25773340f508a7
 			"list": [
 				{
 					"id": -1,
@@ -74,6 +87,7 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "ffff",
 					"pathName": "pages/refund/refund",
 					"query": "",
@@ -84,6 +98,18 @@
 					"name": "ggg",
 					"pathName": "pages/ coupon/coupon",
 					"query": "",
+=======
+					"name": "main",
+					"pathName": "pages/main/main",
+=======
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "aaa",
+					"pathName": "pages/weizhi/weizhi",
+>>>>>>> 8ac54dfc550c8e0314be042e70dcc17707d29eda
+>>>>>>> 25e7f785cb1baac93a26e8866e25773340f508a7
 					"scene": null
 				}
 			]

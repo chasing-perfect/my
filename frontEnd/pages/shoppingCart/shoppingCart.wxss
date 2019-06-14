@@ -8,7 +8,8 @@
 .top{
   width:100%;
   height:2rpx;
-  box-shadow: 0 2rpx 10rpx 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx 0 rgba(0, 0, 0, 0.3);
 }
 .content{
   position:absolute;
@@ -39,7 +40,11 @@
   border-radius:14rpx;
 }
 .goodlist{
-  padding-bottom:100rpx;
+  height: 100vh;
+  background:#f7f7f7;
+}
+.goodlist .goodBox{
+  padding-bottom: 100rpx;
   background:#f7f7f7;
 }
 .goodlist .goodItem{
@@ -48,6 +53,10 @@
   justify-content: space-between;
   background:#fff;
   margin-bottom:20rpx;
+}
+.goodlist .goodItem .icon-lajitong{
+  font-size: 44rpx;
+  margin-bottom: 21rpx;
 }
 .goodlist .goodItem .pic{
   width:180rpx;
@@ -122,13 +131,9 @@
   background:red;
   margin-bottom:21rpx;
 }
-.goodlist{
-  background:#f7f7f7;
-  padding-bottom:200rpx;
-}
 .accountBox{
   position:fixed;
-  bottom:100rpx;
+  bottom:0rpx;
   left:0;
   box-sizing:border-box;
   display:flex;
@@ -152,7 +157,6 @@
   align-items: center;
 }
 .goAccount button{
-  width:150rpx;
   height:70rpx;
   line-height:70rpx;
   background:#dc3025;

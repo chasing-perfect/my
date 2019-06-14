@@ -8,3 +8,5 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }  */
+@import "./pages/base/font/font1/iconfont.wxss";
+@import "./pages/base/font/font2/iconfont.wxss";

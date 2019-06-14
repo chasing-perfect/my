@@ -11,12 +11,9 @@
   <view class='goodlist' wx:if="{{!isShow}}">
     <view class='goodBox'>
       <view class='goodItem' wx:for="{{data}}">
-        <!-- <checkbox-group bindchange="changeItem" data-index='{{index}}'>
-          <checkbox value="{{item.checked}}" checked="{{item.checked}}"></checkbox>
-        </checkbox-group> -->
         <van-checkbox value="{{ item.checked }}" checked-color="#07c160" data-index='{{index}}' bind:change="changeItem">
         </van-checkbox>
-        <image src="" class='pic'></image>
+        <image src="{{item.image}}" class='pic'></image>
         <view class='descriptionBox'>
           <view class='description'>
             <text>{{item.title}}</text>
@@ -30,7 +27,7 @@
               <text bindtap="add" data-index='{{index}}'> + </text>
             </view>
             <view class='remove' bindtap='remove' data-index='{{index}}' wx:if='{{item.checked}}'>
-              <icon></icon>
+              <text class='iconfont icon-lajitong'></text>
               删除
             </view>
           </view>
@@ -48,5 +45,5 @@
     </view>
   </view>
   <!-- tabbar -->
-  <tabbar totalCount='{{totalCount}}'></tabbar>
+  <!-- <tabbar totalCount='{{totalCount}}'></tabbar> -->
 </view>
