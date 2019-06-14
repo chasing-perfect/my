@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* pages/couponCenter/CouponCenter.wxss */
+
 .coupon{
   box-sizing: border-box;
   height:100vh;
@@ -119,8 +118,7 @@
   width:110rpx;
   height:67rpx;
   background:pink;
-=======
-/* pages/couponCenter/CouponCenter.wxss */
+}
 .coupon{
   box-sizing: border-box;
   height:100vh;
@@ -240,5 +238,4 @@
   width:110rpx;
   height:67rpx;
   background:pink;
->>>>>>> 65f6eaff3971541ba4f4829154f4ef22b18e8cec
 }

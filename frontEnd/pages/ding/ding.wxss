@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* pages/ding/ding.wxss */
+
 .ding{
   width:100%;
 }
@@ -122,8 +121,7 @@
 .ding .ding-list .lists .tops{
   height:30rpx;
   background:#f2f2f2;
-=======
-/* pages/ding/ding.wxss */
+}
 .ding{
   width:100%;
 }
@@ -246,5 +244,5 @@
 .ding .ding-list .lists .tops{
   height:30rpx;
   background:#f2f2f2;
->>>>>>> 65f6eaff3971541ba4f4829154f4ef22b18e8cec
+
 }

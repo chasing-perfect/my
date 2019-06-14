@@ -1,6 +1,6 @@
 .warp{
   width:750rpx;
-  height:3000rpx;
+  height:100vh;
   background:#fff;
 }
 .box{
