@@ -12,13 +12,14 @@
     "pages/order/order",
     "pages/account/account",
     "pages/recom/recom",
-    "pages/prc/prc"
+    "pages/prc/prc",
+    "pages/particulars/particulars"
   ],
-      "permission": {
-        "scope.userLocation": {
-          "desc": "你的位置信息将用于小程序位置接口的效果展示"
-        }
-      },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -31,25 +32,28 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"pages/base/image/index.jpg",
+        "selectedIconPath":"pages/base/image/index-active.jpg"
       },
       {
         "pagePath": "pages/recom/recom",
-        "text": "推荐"
+        "text": "推荐",
+        "iconPath": "pages/base/image/pack.jpg",
+        "selectedIconPath": "pages/base/image/pack-active.jpg"
       },
       {
         "pagePath": "pages/shoppingCart/shoppingCart",
-        "text": "购物车"
+        "text": "购物车",
+        "iconPath": "pages/base/image/cart.jpg",
+        "selectedIconPath": "pages/base/image/cart-active.jpg"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "个人中心"
+        "text": "个人中心",
+        "iconPath": "pages/base/image/mine.jpg",
+        "selectedIconPath": "pages/base/image/mine-active.jpg"
       }
     ]
-  },
-    "permission": {
-      "scope.userLocation": {
-        "desc": "你的位置信息将用于小程序位置接口的效果展示"
-      }
   }
 }

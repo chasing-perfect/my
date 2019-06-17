@@ -15,12 +15,14 @@ Page({
       },
       currentColor:'',
       currentSize:'',
-      selectAll:{
+      selectAll:[{
         'image': './image/main.jpg',
         'title': '枕头',
         'colors':'',
-        'sizes':''
-      }
+        'sizes':'',
+        'count':1,
+        'price':128
+      }]
   },
   toIndex:function (){
     //去首页
@@ -49,16 +51,17 @@ Page({
     let sis = this.data.mode.size[this.data.currentSize];
     
     this.setData({
-      selectAll: {
+      selectAll: [{
         'image': './image/main.jpg',
         'title': '枕头',
         'count':1,
         'colors': crs,
-        'sizes': sis
-      }
+        'sizes': sis,
+        'price':128
+      }]
     })
     wx.navigateTo({
-      url: '../account/account?data='+JSON.stringify(this.data.selectAll)
+      url: '../account/account?good='+JSON.stringify(this.data.selectAll)
     })
   },
   /**
