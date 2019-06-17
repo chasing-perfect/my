@@ -1,613 +1,3 @@
-
-.particulars{
-  width:100%;
-  background-color: #f8f8f8;
-}
-
-/* 头部开始 */
-.particulars .title-img{
-  display: flex;
-  justify-content: space-between;
-  position:relative;
-  font-family:"MicrosoftYaHei";
-  color:#000;
-}
-.particulars .title-img image{
-  width:100%;
-  height:752rpx;
-  background:#f00;
-
-}
-
-.particulars .title-img .top{
-  box-sizing:border-box;
-  position:absolute;
-  top:44rpx;
-  left:0;
-  width:100%;
-  height:76rpx;
-  display: flex;
-  justify-content: space-between;
-  padding:0 16rpx;
-
-}
-.particulars .title-img .top .diff{
-   display: inline-block;
-   width:76rpx;
-    height:76rpx;
-    opacity: 0.6;
-    border-radius:50%;
-    color:#fff;
-    text-align: center;
-    line-height: 76rpx;
-    font-size:16rpx;
-    background-color:#1f1f1f;
-
-}
-.particulars .title-img .top .part{
-  display: flex;
-  justify-content: space-between;
-  width:178rpx;
-  height:100%;
-
-}
-.particulars .title-img .top .part .moreMeg{
-  position:relative;
-  width:76rpx;
-  height:76rpx;
-}
-.particulars .title-img .top .part .moreMeg .megNum{
-  position: absolute;
-  top:0;
-  left:50%;
-  transform:translateX(-50%);
-  width:53rpx;
-	height:38rpx;
-	border-radius:20rpx;
-  text-align: center;
-  line-height: 38rpx;
-	background-color:#fe4330;
-  color:#fff;
-  font-size:30rpx;
-}
-
-
-.particulars .title-img .bottom{
-  position:absolute;
-  bottom:42rpx;
-  left:50%;
-  display: flex;
-  justify-content: space-between;
-  transform:translateX(-50%);
-  width:191rpx;
-  height:48rpx;
-}
-.particulars .title-img .bottom text{
-  width:91rpx;
-  height:100%;
-  border-radius:10rpx;	
-  font-size:30rpx;
-  text-align: center;
-  line-height: 48rpx;
-  color:#ffff;
-}
-.particulars .title-img .bottom .facade{
-  background:#ff3000;
-}
-.particulars .title-img .bottom .img{
-  background:rgba(255,255,255,.5);
-  color:#000;
-}
-/* 头部结束 */
-
-/* 信息开始 */
-.particulars .megs{
-  box-sizing: border-box;
-  padding:22rpx 41rpx 16rpx 25rpx;
-  width:100%;
-  background-color: #fff;
-
-}
-.particulars .megs .meger{
-  display: flex;
-  justify-content: space-between;
-  width:100%;
-  font-size: 30rpx;
-	line-height: 32rpx;
-	color: "#404040";
-}
-.particulars .megs .meger .txt{
-  width:554rpx;
-}
-.particulars .megs .price{
-  margin:25rpx 0 27rpx 0;
-  font-size: 34rpx;
-	line-height: 20rpx;
-	color:#fa380a;
-}
-.particulars .allNum{
-  display: flex;
-  font-size: 26rpx;
-	line-height: 24rpx;
-	color:#505050;
-}
-.particulars .allNum .kuai{
-  margin-right:144rpx;
-}
-/* 拼单开始 */
-.crowdordering{
-  background-color: "#f8f8f8";
-  overflow: hidden;
-
-}
-.crowdordering .shop{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  background:#fff;
-  padding:23rpx 47rpx 27rpx 16rpx;
-  width:100%;
-  margin-top:20rpx;
-    
-}
-.crowdordering .shop .left .allQuan{
-  display: flex;
-  
-}
-.crowdordering .shop .left .allQuan .quan{
-    display: flex;
-
-    width:123rpx;
-    height:24rpx;
-    border:1rpx dashed #f00;
-
-}
-.crowdordering .shop .left .allQuan .quan:nth-child(1){
-  margin-bottom:15rpx;
-}
-.crowdordering .shop .left .allQuan .quan text{
-  flex:1;
-  text-align:center;
-  font-size: 16rpx;
-	line-height: 24rpx;
-	color:"#ff3000";
-
-}
-.crowdordering .shop .left .sq{
-  font-size:26rpx;
-	line-height:28rpx;
-	color: #434343;
-  margin-left:10rpx;
-}
-.crowdordering .shop .right{
-  color:#b1b1b1;
-}
-.crowdordering .shipping-information{
-  display: flex;
-  margin-top:10rpx;
-  height:69rpx;
-  padding:0 47rpx 0 16rpx;
-   background-color: #fff;
-}
-
- .crowdordering .shipping-information .jian{
-    height:69rpx;
-    line-height:69rpx;
-    color:#b1b1b1;
-
-}
-.crowdordering .shipping-information .inforLeft{
-  display: flex;
-  align-items: center;
-  flex:1;
-  font-size:24rpx;
-	color:#505050;
-  
-}
-.crowdordering .shipping-information .inforLeft >text{
-  flex:1;
-  text-align:center;
-  line-height:69rpx;
-}
-.crowdordering .shipping-information .inforLeft text:nth-child(n)::before{
-   
-    display: inline-block;
-    width:40rpx;
-    height:69rpx;
-    line-height: 69rpx;
-    content:'.';
-    text-align: left;
-
-}
-.crowdordering .shipping-information .inforLeft text:nth-child(1)::before{
-  display: inline-block;
-  width:16rpx;
-  height:69rpx;
-  color:#f00;
-  content:'x';
-}
-.crowdordering .pinPeople{
-  margin-top:10rpx;
-  width:100%;
-  background-color: #fff;
-  
-}
-.crowdordering .pinPeople .every{
-  box-sizing:border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width:100%;
-  padding:32rpx 46rpx 42rpx 26rpx;
-
-}
- .crowdordering .pinPeople .every .pLeft{
-  font-size:28rpx;
-  color:#000;
-
-
-} 
-.crowdordering .pinPeople .every .pLeft .allPer{
-  font-size:24rpx;
-}
-.crowdordering .pinPeople .every .pLeft .ig{
- display: flex;
- align-items: center;
-  margin-top:15rpx;
-  height:71rpx;
-
-}
-.crowdordering .pinPeople .every .pLeft .ig image{
-  width:71rpx;
-  height:71rpx;
-  margin-right:20rpx;
-
-}
-.crowdordering .pinPeople .every .pRight{
-  display: flex;
-  
-}
-.crowdordering .pinPeople .every .pRight .cha{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right:28rpx;
-  align-items: center;
-}
-.crowdordering .pinPeople .every .pRight .cha .chaPerson{
-  font-size:28rpx;
-  flex:1;
-} 
-.crowdordering .pinPeople .every .pRight .cha .times{
-  font-size:18rpx;
-  flex:1;
-}
-.crowdordering .pinPeople .every .pRight .goPing{
-  width:135rpx;
-	height:60rpx;
-	border-radius:10rpx;
-	background-color: #fb3609;
-  font-size:32rpx;
-  color:#fff;
-  text-align:center;
-  line-height:60rpx;
-}
-.crowdordering .appraise{
-  box-sizing:border-box;
-  width:100%;
-  margin-top:20rpx;
-  background:#fff;
-}
-.crowdordering .appraise .shopAppraise{
-  display: flex;
-  justify-content: space-between;
-  padding:39rpx 27rpx;
-  font-size:36rpx;
-	color: #3c3c3c;
-   background-color: #fff;
-
-}
-.crowdordering .appraise .shopAppraise .more{
-  display: flex;
-  align-items: center;
-  font-size:36rpx;
-  color: #b1b1b1;
-}
-.crowdordering .appraise .selectLook{
-  display: flex;
-  flex-wrap:wrap;
-  padding:0 27rpx;
-  background-color: #fff;
-  
-}
-.crowdordering .appraise .selectLook view{
-	border-radius:20rpx;
-	background-color: #fcd8d1;  
-  font-size:30rpx;
-  text-align: center;
-  line-height:50rpx;
-  padding:13rpx 21rpx 8rpx 14rpx;
-  margin-bottom:22rpx;
-   margin-right:15rpx;
-}
-.crowdordering .appraise .allList{
-  box-sizing: border-box;
-  width:100%;
-  background-color: #f8f8f8;
- 
-}
-.crowdordering .appraise .allList .list{
-  margin-bottom:20rpx;
-  padding:23rpx 27rpx;
-   background-color: #fff;
-}
-.crowdordering .appraise .allList .list .per{
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-}
-.crowdordering .appraise .allList .list .per image{
-  width:56rpx;
-  height:56rpx; 
-  background:pink;
-  border-radius: 50%;
-  margin-right:15rpx;
-}
-.crowdordering .appraise .allList .list .wangName{
-  font-size:23rpx;
-  margin-left:10rpx;
-  line-height:56rpx;
-
-}
-.crowdordering .appraise .allList .list .content{
-  font-family: "SimHei";
-	font-size:30rpx;
-	line-height:44rpx;
-  margin-top:15rpx;
-	color: #2a2929;
-
-}
-.crowdordering .appraise .allList .watchMore{
-  height:78rpx;
-  font-size:30rpx;
-  color: #b1b1b1;
-  text-align: center;
-  line-height:78rpx;
-  margin-bottom:10rpx;
-  background:#fff;
-}
-/* 商品详情开始 */
-.shopMore{
-  width:100%;
-}
-.shopMore .shop-title{
-  width:100%;
-  height:100rpx;
-  font-size:36rpx;
-	line-height:100rpx;
-	color:#111111;
-  text-indent: 20rpx;
-  background:#fff;
-}
-.shopMore .shop-list{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap:wrap;
-  box-sizing: border-box;
-  padding:16rpx 16rpx 0 16rpx;
-  width:100%;
-}
-.shopMore .shop-list .list-every{
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  width:230rpx;
-  height:335rpx;
-  padding:13rpx;
-  margin-bottom:24rpx;
-  background:#fff;
-  font-size:23rpx;
-}
-.shopMore .shop-list .list-every .shop-price{
-  width:200rpx;
-  display: flex;
-  justify-content: space-between;
-  font-size:16rpx;
-  margin-top:15rpx;
-
-}
-.shopMore .shop-list .list-every .shop-price .surePrice{
-  color:#f00;
-  
-}
-.shopMore .shop-list .list-every .shop-price .toGo{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  
-  font-size:12rpx;
-  padding:5rpx 10rpx;
-  background:#f00;
-  color:#fff;
-  border-radius: 10rpx;
-  
-}
-/* nav开始 */
-.particulars .my-nav{
-  position:fixed;
-  bottom:0;
-  left:0;
-  display: flex;
-  height:97rpx;
-  width:100%;
-  background:#fff;
-}
-.particulars .my-nav view{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  font-size:16rpx;
-}
-
- .particulars .my-nav view:nth-child(1),.particulars .my-nav view:nth-child(2),.particulars .my-nav view:nth-child(3){
-  flex:1;
-
-  color:#7f7f7f;
-} 
-
-
-.particulars .my-nav view .im{
-  margin-bottom:3rpx;
-
-}
-
-.particulars .my-nav .toPing{
-  width:249rpx;
-  background:#ffcec9;
-  text-align: center;
-  color:#fff;
-  font-size:28rpx;
-
-}
-.particulars .my-nav .oneBuy{
-  width:237rpx;
-  background:#fb3609;
-  text-align: center;
-  color:#fff;
-  font-size:28rpx;
-}
-
-
-/* 模态框开始 */  
-.selectType{
-  width:100%;
-
-}
-.van-popup--bottom{
-  overflow: visible!important;
-}
-
-/* .kong{
-  height:60rpx;
-  background-color:rgba(0,0,0,.1);
-} */
-.selectType .title-img{
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width:100%;
-  padding:15rpx;
-}
-.selectType .title-img .ige{
-    width:240rpx;
-    border-radius: 10rpx;
-}
-.selectType .title-img .ige .wp{
-    position: absolute;
-    top:-60rpx;
-    left:10rpx;
-    width:240rpx;
-    height:240rpx;
-    padding:5rpx;
-    z-index:111;
-}
-.selectType .title-img .ige image{
-  width:240rpx;
-  height:240rpx;
-  border-radius: 10rpx;
-}
-.selectType .title-img .priceAndSize{
-  padding-left:10rpx;
-  flex-direction: column;
-  justify-content: space-around;
-  position:relative;
-  flex:1;
-  margin-left:26rpx;
-}
-.selectType .title-img .priceAndSize text{
-  display: block;
-  height:55rpx;
-  line-height: 55rpx;
-  font-size:28rpx;
-}
-.selectType .title-img .priceAndSize .pr{
-  color:#f00;
-}
-
-.selectType .title-img  .clone{
-  position: absolute;
-  right:20rpx;
-  top:15rpx;
-
-}
-
-.selectType .colors{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  font-size:13rpx;
-}
-.selectType .colors .allColors{
-  display: flex;
-  
-}
-.selectType .colors .allColors .everyColors{
-  width:75rpx;
-  height:35rpx;
-  background:#f00;
-  color:#fff;
-  border-radius: 5rpx;
-
-}
-.selectType .size,.selectType .color{
-  padding-left:12rpx;
-}
-.selectType .size .sizes,.selectType .color .colors{
-  height:105rpx;
-  font-size:36rpx;
-  font-weight: bold;
-  line-height:105rpx;
-}
-.selectType .size .allSize,.selectType .color .allColor{
-  display: flex;
-}
-.selectType .size .allSize text,.selectType .color .allColor text{
-  display: inline-block;
-  margin-right:50rpx;
-  width:192rpx;
-  height:44rpx;  
-  background:#dcdcdc;
-  text-align: center;
-  line-height: 44rpx;
-  border-radius: 15rpx;
-  color:#2e2e2e;
-
-}
-.sub{
-  width:100%;
-  height:94rpx;
-  background:#fb3609;
-  color:#fff;
-  font-size:39rpx;
-  text-align:center;
-  line-height:94rpx;
-  margin-top:178rpx;
-}
-/* 结束 */
-.end{
- height:16183rpx;
- padding-bottom:97rpx;
-}
-.end image{
-  width:100%;
-  height:100%;
-
-}
 /* pages/particulars/particulars.wxss */
 .particulars{
   width:100%;
@@ -650,8 +40,9 @@
     color:#fff;
     text-align: center;
     line-height: 76rpx;
-    font-size:16rpx;
+    font-size:45rpx;
     background-color:#1f1f1f;
+    font-weight: bold;
 
 }
 .particulars .title-img .top .part{
@@ -726,6 +117,16 @@
 	line-height: 32rpx;
 	color: "#404040";
 }
+.particulars .megs .meger .share text{
+  display: block;
+}
+.particulars .megs .meger .share .icons{
+  width:100%;
+  text-align: center;
+  font-size:40rpx;
+  margin-bottom:10rpx;
+ 
+}
 .particulars .megs .meger .txt{
   width:554rpx;
 }
@@ -767,7 +168,6 @@
 }
 .crowdordering .shop .left .allQuan .quan{
     display: flex;
-
     width:123rpx;
     height:24rpx;
     border:1rpx dashed #f00;
@@ -808,7 +208,6 @@
 
 }
 .crowdordering .shipping-information .inforLeft{
-  display: flex;
   align-items: center;
   flex:1;
   font-size:24rpx;
@@ -820,23 +219,35 @@
   text-align:center;
   line-height:69rpx;
 }
-.crowdordering .shipping-information .inforLeft text:nth-child(n)::before{
+.crowdordering .shipping-information .inforLeft .circle{
+  font-size:20rpx;
+  color:#f00;
+  padding:
+}
+.crowdordering .shipping-information .inforLeft text text{
+  display: inline-block;
+  width:51rpx;
+  text-align: center;
+  height:69rpx;
+  line-height: 69rpx;
+
+}
+/* .crowdordering .shipping-information .inforLeft text:nth-child(n)::before{
    
     display: inline-block;
     width:40rpx;
-    height:69rpx;
-    line-height: 69rpx;
+    
     content:'.';
     text-align: left;
 
-}
-.crowdordering .shipping-information .inforLeft text:nth-child(1)::before{
+} */
+/* .crowdordering .shipping-information .inforLeft text:nth-child(1)::before{
   display: inline-block;
   width:16rpx;
   height:69rpx;
   color:#f00;
   content:'x';
-}
+} */
 .crowdordering .pinPeople{
   margin-top:10rpx;
   width:100%;
@@ -856,7 +267,6 @@
   font-size:28rpx;
   color:#000;
 
-
 } 
 .crowdordering .pinPeople .every .pLeft .allPer{
   font-size:24rpx;
@@ -872,6 +282,8 @@
   width:71rpx;
   height:71rpx;
   margin-right:20rpx;
+  border-radius: 50%;
+  background:pink;
 
 }
 .crowdordering .pinPeople .every .pRight{
@@ -1196,7 +608,14 @@
   line-height: 44rpx;
   border-radius: 15rpx;
   color:#2e2e2e;
+  font-size:23rpx;
 
+}
+.selectType .color .allColor .cur{
+  background:#f00;
+}
+.selectType .size .allSize .cur{
+  background:#f00;
 }
 .sub{
   width:100%;

@@ -23,12 +23,12 @@ Page({
       }
   },
   toIndex:function (){
+    //去首页
     console.log(1)
       wx.navigateTo({
         url: '../index/index'
       })
   },
-
   selectSize:function (ev){
       this.setData({
         currentSize:ev.currentTarget.dataset.sizeindex
@@ -41,11 +41,13 @@ Page({
   },
   oks: function () {
     //确定
+
     //当前的颜色
     let crs = this.data.mode.color[this.data.currentColor];
-    //当前得尺寸
 
+    //当前得尺寸
     let sis = this.data.mode.size[this.data.currentSize];
+    
     this.setData({
       selectAll: {
         'image': './image/main.jpg',
@@ -71,8 +73,11 @@ Page({
     })
   },
   noShow:function (){
+    //关闭
     this.setData({
-      isShow:false
+      isShow:false,
+      currentSize:'',
+      currentColor:''
     })
   },
  

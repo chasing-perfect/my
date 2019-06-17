@@ -5,16 +5,16 @@
     <image src='{{mode.image}}'></image>
     <!-- top -->
     <view class='top'>
-      <view class='btn diff'>
-        <van-icon name='arrow-left' color='#fff'></van-icon>
+      <view class='btn diff iconfont icon-zuojiantou'>
+       
       </view>
       <view class='part'>
-        <view class='car diff'>
-          <van-icon name='shopping-cart-o' color='#fff'></van-icon>>
+        <view class='car diff iconfont icon-gouwuche'>
+         -->
         </view>
         <view class='moreMeg diff'>
-          <text>消息</text>
-          <text class='megNum'>00</text>
+          <text class='iconfont icon-gengduoda'></text>
+          <text class='megNum'>0</text>
         </view>
       </view>
     </view>
@@ -29,7 +29,10 @@
   <view class='megs'>
     <view class='meger'>
       <text class='txt'>{{mode.des}}</text>
-      <text class='share'>分享</text>
+      <text class='share'>
+        <text class='iconfont icon-fenxiang icons'></text>
+         <text>分享</text>
+      </text>
     </view>
     <view class='price'>
       ￥<text>118-159</text>
@@ -60,21 +63,20 @@
           <text class='sq'>10元店铺优惠券</text>
         </view>
       </view>
-      <view class='right'>
-      >
+      <view class='right iconfont icon-youjiantou'>
+     
       </view>
     </view>
   
     <!-- shop结束 -->
     <view class='shipping-information'>
       <view class='inforLeft'>
-          <text>7天无理由</text>
-          <text>48小时发货</text>
-          <text>假一赔十</text>
-          <text>全场包邮</text>
+          <text><text class='iconfont icon-removecircleo circle'></text>7天无理由</text>
+          <text><text>.</text>48小时发货</text>
+          <text><text>.</text>假一赔十</text>
+          <text><text>.</text>全场包邮</text>
       </view>
-      <view class='jian'>
-        >
+      <view class='jian iconfont icon-youjiantou'>
       </view>
     </view>
     <view class='pinPeople'>
@@ -100,7 +102,7 @@
     <view class='appraise'>
       <view  class='shopAppraise'>
         <text class='shopLeft'>商品评价(8823)</text>
-        <text class='more'>查看更多 》 </text>
+        <text class='more'>查看更多<text class='iconfont icon-youjiantou'></text></text>
       </view>
       <view class='selectLook'>
         <view>
@@ -154,57 +156,7 @@
         <view class='shop-title'>
           商品详情
         </view>
-        <!-- <view class='shop-list'>
-          <view class='list-every'>
-            <image src=''></image>
-            <text class='shop-name'>乳胶</text>
-            <view class='shop-price'>
-              <text class='price-left'>left</text>
-              <text class='surePrice'>228.00</text>
-              <view class='toGo'>
-                <text class='txt'>立即购买</text>
-                <text>icon</text>
-              </view>
-            </view>
-          </view>
-          <view class='list-every'>
-            <image src=''></image>
-            <text class='shop-name'>乳胶</text>
-            <view class='shop-price'>
-              <text class='price-left'>left</text>
-              <text class='surePrice'>228.00</text>
-              <view class='toGo'>
-                <text class='txt'>立即购买</text>
-                <text>icon</text>
-              </view>
-            </view>
-          </view>
-          <view class='list-every'>
-            <image src=''></image>
-            <text class='shop-name'>乳胶</text>
-            <view class='shop-price'>
-              <text class='price-left'>left</text>
-              <text class='surePrice'>228.00</text>
-              <view class='toGo'>
-                <text class='txt'>立即购买</text>
-                <text>icon</text>
-              </view>
-            </view>
-          </view>
-          <view class='list-every'>
-            <image src=''></image>
-            <text class='shop-name'>乳胶</text>
-            <view class='shop-price'>
-              <text class='price-left'>left</text>
-              <text class='surePrice'>228.00</text>
-              <view class='toGo'>
-                <text class='txt'>立即购买</text>
-                <text>icon</text>
-              </view>
-            </view>
-          </view>
-           
-        </view>-->
+      
       </view>
      <!-- 商品详情结束 -->
   </view>
@@ -268,20 +220,17 @@
         <view class='size'>
           <view class='sizes'>尺寸</view>
           <view class='allSize'>
-            <text wx:for='{{mode.size}}' wx:key='{{index}}' bindtap='selectSize' data-sizeIndex='{{index}}'>{{item}}</text>
-           
+            <text wx:for='{{mode.size}}' wx:key='{{index}}' bindtap='selectSize' data-sizeIndex='{{index}}' class='{{index===currentSize?"cur":""}}'>{{item}}</text>
           </view>
         </view>
         <!-- 颜色 -->
        <view class='color'>
           <view class='colors'>颜色</view>
           <view class='allColor'>
-            <text wx:for='{{mode.color}}' wx:key='{{index}}' bindtap='selectColor' data-colorIndex='{{index}}'>{{item}}</text>
+            <text wx:for='{{mode.color}}' wx:key='{{index}}' bindtap='selectColor' data-colorIndex='{{index}}' class='{{index===currentColor?"cur":""}}'>{{item}}</text>
           </view>
         </view>
         <!-- 数量 -->
-    
-    
     </view>
     <view class='sub' bindtap='oks'>确定</view>
   </van-popup>
