@@ -1,0 +1,7 @@
+<view class="cartTitles">
+  <view class="topTitle">
+    <icon class="iconfont icon-zuojiantou" bindtap='back'></icon>
+    <view class="cartTitle">{{title}}</view>
+  </view>
+  <line/>
+</view>

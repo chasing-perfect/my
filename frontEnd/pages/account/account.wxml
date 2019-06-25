@@ -1,5 +1,6 @@
 <!--pages/account/account.wxml-->
 <view class='contain'>
+  <backNav title="{{'确认订单'}}"/>
   <view class='contentBox'>
     <view class='top'></view>
     <!-- 选择地区 -->

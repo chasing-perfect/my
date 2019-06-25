@@ -1,6 +1,10 @@
+<!--pages/cart/cart.wxml-->
 <!--pages/shoppingCart/shoppingCart.wxml-->
 <view class='contain'>
-  <view class='top'></view>
+  <view class="cartTitles">
+    <view class="cartTitle">购物车</view>
+    <line/>
+  </view>
   <!-- 购物车为空 -->
   <view class='content' wx:if="{{isShow}}">
     <image class='pic' src='../base/image/ele.png'></image>

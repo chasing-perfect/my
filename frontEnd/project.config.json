@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -53,6 +53,13 @@
 					"id": -1,
 					"name": "sds",
 					"pathName": "pages/particulars/particulars",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "account",
+					"pathName": "pages/account/account",
 					"scene": null
 				}
 			]

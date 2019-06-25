@@ -32,8 +32,16 @@ App({
         }
       }
     })
+    wx.getSystemInfo({
+      success: (res) => {
+        this.globalData.statusBarHeight = res.statusBarHeight
+        this.globalData.navBarHeight = 44 + res.statusBarHeight
+      },
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    statusBarHeight: 0,
+    screenHeight: 0
   }
 })

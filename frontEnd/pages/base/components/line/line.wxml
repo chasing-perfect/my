@@ -1,0 +1,2 @@
+<!--pages/base/components/line/line.wxml-->
+<view class="header-line"></view>
