@@ -19,10 +19,10 @@
       </view>
     </view>
     <!-- bottom -->
-    <view class='bottom'>
+    <!-- <view class='bottom'>
       <text class='facade'>外观</text>
       <text class='img'>图片</text>
-    </view>
+    </view> -->
   </view>
   <!-- 头部结束 -->
   <!-- 详情信息开始 -->
@@ -146,7 +146,7 @@
             啊v打开设置v阿飞离开
           </view>
         </view>
-        <view class='watchMore'>查看更多</view>
+        <!-- <view class='watchMore'>查看更多</view> -->
       </view> 
 
     </view>

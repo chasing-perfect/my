@@ -1,539 +1,564 @@
 /**index.wxss**/
-.wrap {
-  height: 100vh;
-  background: #fff;
+.index{
+  width:100%;
 }
-/*轮播 开始*/
-.wrap .swiper {
-  width: 100%;
-  height: 360rpx;
-  margin-bottom: 103rpx;
+.index .index-tops{
+  height:145rpx;
+  background:#0ff;
 }
-.wrap .swiper .swiper-items {
-  width: 100%;
-  height: 100%;
+.index .kongs{
+  height:20rpx;
+}
+.index .titles{
+  box-sizing: border;
+  padding:0 40rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:111rpx;
+
+}
+.index .titles text{
+  font-size:50rpx;
+  color:#fff;
+  font-weight: bold;
+}
+.index  .banner image{
+  width:100%;
 } 
-.wrap .swiper .swiper-items .swiper-img {
-  width: 100%;
+.banner{
+  display: flex;
+  height:360rpx;
 }
-/*轮播 结束*/
-/*拼团 开始*/
-.wrap .put {
-  /* height: 100rpx; */
-  /* background: olive; */
-  margin-bottom: 104rpx;
+.banner .banner-left,.banner .banner-right{
+  width:23rpx;
+  height:100%;
+  background:#ddd;
 }
-.wrap .put .put-mainBox {
-  height: 256rpx;
-  /* background: pink; */
+.banner .banner-left{
+  border-radius:0 20rpx 20rpx 0;
+  margin-right:15rpx;
 }
-.wrap .put .put-mainBox .put-mainBox-img {
-  width: 100%;
-  height: 100%;
+.banner .banner-right{
+  border-radius:20rpx 0 0 20rpx;
+  margin-left:15rpx;
 }
-.wrap .put .put-joinBox {
-   height: 378rpx;
-   /* background: tomato; */
-   box-sizing: border-box;
-   padding: 150rpx 0 0 0;
-   text-align: center;
-   position: relative;
+.banner .center{
+  flex:1;
+  border-radius: 20rpx;
+  overflow: hidden;
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox {
+.banner .center swiper{
+  height:100%;
+}
+.main-push{
+  margin-top:102rpx;
+  position:relative;
+  width:100%;
+}
+.main-push .mp-top image{
+  width:100%;
+  height:258rpx;
+}
+.main-push .mp-top .top-title{
   position: absolute;
-  top: -165rpx;
-  left: 50%;
-  margin-left: -329rpx;
-  width: 658rpx;
-  height: 284rpx;
-  background: #fff;
-  box-shadow: 1px 1px 6px 1rpx #ccc;
+  height:90rpx;
+  width:100%;
+  text-align: center;
+  line-height: 90rpx;
+  color:#fff;
+  font-size:31rpx;
+}
+.main-push .main-content{
+  box-sizing:border-box;
+  position:absolute;
+  top:90rpx;
+  display: flex;
+  width:656rpx;
+  height:284rpx;
+  padding:32rpx;
+  background:#fff;
+  left:50%;
+  transform: translateX(-50%);
   border-radius: 10rpx;
-  box-sizing: border-box;
-  padding: 39rpx 26rpx 25rpx 26rpx;
-  display: flex;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx #ddd;
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-img {
-  width: 320rpx;
-  height: 220rpx;
+
+.main-push .main-content >image{
+  width:275rpx;
+  height:275rpx;
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-textBox {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15rpx;
+.main-push .main-content .explain{
+  margin-left:18rpx;
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-textBox .put-joinBox-alertBox-text {
-  color: #1c1c1c;
-  font-size: 28rpx;
-  height: 64rpx;
-  line-height: 32rpx;
-  text-align: left;
+.main-push .main-content .explain .explain-txt{
+  font-size:24rpx;
+  color:#000;
   font-weight: bold;
+
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-textBox .put-joinBox-alertBox-priceBox {
-  height: 40rpx;
-  display: flex;
-  font-weight: bold;
-  margin-top: 40rpx;
-  /* align-items: flex-end; */
-  margin-bottom: 28rpx;
+.main-push .main-content .explain .price{
+  height:88rpx;
+  line-height: 88rpx;
+
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-new {
-  color: #ff3000;
-  font-size: 38rpx;
+.main-push .main-content .explain .price .now{
+  font-size:40rpx;
+  color:#f00;
+
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-new .put-joinBox-i {
-  font-size: 30rpx;
-  margin-right: -10rpx;
-}
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-alertBox-old {
-  color: #b4b4b4;
-  font-size: 30rpx;
+.main-push .main-content .explain .price .del{
+  font-size:16rpx;
+  color:#ddd;
   text-decoration: line-through;
-  margin-left: 8rpx;
+  margin-left:5rpx;
+  
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox  .put-joinBox-alertBox-old .put-joinBox-i {
-  font-size: 30rpx;
-  margin-right: -10rpx;
+.main-push .main-content .explain .flash-sale{
+  padding:9rpx 41rpx;
+  border:1rpx solid #f00;
+  color:#f00;
+  font-size:20rpx;
 }
-.wrap .put .put-joinBox .put-joinBox-alertBox .put-joinBox-shoping {
-  width: 125rpx;
-  height: 34rpx;
-  border: 2rpx solid #ff3000;
-  text-align: center;
-  line-height: 32rpx;
-  color: #ff3000;
-  font-size: 30rpx;
-}
-.wrap .put .put-joinBox .put-joinBox-headImgBoxList {
-  height: 90rpx;
-  /* background: yellow; */
-  display: flex;
-  margin-bottom: 35rpx;
-  box-sizing: border-box;
-  justify-content: space-between;
-  padding: 0 116rpx;
-}
-.wrap .put .put-joinBox .put-joinBox-headImgBoxList .put-joinBox-headImgBoxItems {
-  width: 20%;
-  /* background: olive; */
-  position: relative;
-}
-.wrap .put .put-joinBox .put-joinBox-headImgBoxList .put-joinBox-headImgBoxItems .put-joinBox-img {
-    width: 90rpx;
-    height: 90rpx;
-    border-radius: 50%;
-}
-.wrap .put .put-joinBox .put-joinBox-headImgBoxList .put-joinBox-headImgBoxItems .put-joinBox-iconText {
-  position: absolute;
-  bottom: -10rpx;
-  left: 50%;
-  margin-left: -35rpx;
-  background: rgb(255,33,0);
-  font-size: 20rpx;
-  color: #ffffff;
-  box-sizing: border-box;
-  padding: 0rpx 12rpx;
-  border-radius: 12rpx;
-}
-.put-joinBox .put-joinBox-rest  {
-  color: #252525;
-  font-size: 28rpx;
-}
-.put-joinBox .put-joinBox-rest .put-num {
-  color: #cd0202;
-}
-.put-joinBox .put-joinBox-restTime {
-  height: 28rpx;
-  color: #545454;
-  font-size: 26rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.put-joinBox .put-joinBox-restTime .put-joinBox-line {
-  flex: 1;
-  height: 2rpx;
-  background: #c7c7c7;
-}
-.put-joinBox .put-joinBox-restTime  .put-joinBox-time {
-  width: 238rpx;
-  margin: 0 46rpx;
-  display: flex;
-}
-.put-joinBox .put-joinBox-restTime  .put-joinBox-time .put-joinBox-t {
-  width: 34rpx;
-  height: 30rpx;
-  background: #fd897d;
-  color: #f40000;
-  text-align: center;
-  line-height: 30rpx;
-}
-.put-joinBox .put-joinBox-restTime  .put-joinBox-time .put-joinBox-icon {
-  width: 14rpx;
-  height: 30rpx;
-  text-align: center;
-}
-.put-joinBox .put-joinBox-restTime  .put-joinBox-time .rest1 {
-  margin: 0 2rpx 0 0;
-}
-.put-joinBox .put-joinBox-restTime  .put-joinBox-time .rest2 {
-  margin: 0 0 0 2rpx;
-}
-.wrap .put .put-shareBox {
-  width: 100%;
-  height: 596rpx;
-   background: pink;
-}
-.wrap .put .put-shareBox .put-shareBox-img {
-  width: 100%;
-  height: 100%;
-}
-/*拼团 结束*/
-/*首页详情部分 开始*/
-.wrap .mydetail {
-  /* background: red; */
-  margin-bottom: 80rpx;
-}
-.wrap .mydetail .mydetail-top {
-  width: 100%;
-  margin-bottom: 120rpx;
-}
-.wrap .mydetail .mydetail-top .mydetail-top-img1 {
-  width: 100%;
-  height: 992rpx;
-  display: block;
-}
-.wrap .mydetail .mydetail-top .mydetail-top-img2 {
-  width: 100%;
-  height: 378rpx;
-  display: block;
-}
-.wrap .mydetail .mydetail-top .mydetail-top-img3 {
-  width: 100%;
-  height: 438rpx;
-  display: block;
-}
-.wrap .mydetail .mydetail-bottom {
-  height: 345rpx;
-  /* background: olive; */
-  display: flex;
-  box-sizing: border-box;
-  padding: 0 15rpx; 
-  justify-content: space-between;
-}
-.wrap .mydetail .mydetail-bottom .detail-list{
-  display: flex;
-  padding: 0 22rpx 0 11rpx;
-  justify-content: space-between;
-}
-.wrap .mydetail .mydetail-bottom .detail-item{
-  width: 339rpx;
-  text-align: center;
-}
-.wrap .mydetail .mydetail-bottom .detail-item .title{
-  font-size: 24rpx;
-  color: #666666;
-}
-.wrap .mydetail .mydetail-bottom .detail-item .item-pic{
-  width: 100%;
-  height: 211rpx;
-  margin-top: 12rpx;
-  background: yellow;
-  margin-bottom: 25rpx;
-}
-.wrap .mydetail .mydetail-bottom .detail-item .descrip{
-  display: flex;
-  align-items: center;
-  justify-content: space-between；
-}
-.wrap .mydetail .mydetail-bottom .detail-item .descrip image{
-  width: 48rpx;
-  height: 16rpx;
-  background: green;
-  margin-right: 10rpx;
-}
-.wrap .mydetail .mydetail-bottom .detail-item .descrip .item-price{
-  font-size: 24rpx;
-  color: #df0000;
-}
-.wrap .mydetail .mydetail-bottom.detail-item .descrip .item-price text{
-  font-size: 16rpx;
-}
-.wrap .mydetail .mydetail-bottom .detail-item .descrip .item-btn{
-  display: flex;
-  justify-content: space-around;
-  /* width: 132rpx; */
-  height: 40rpx;
-  background: #df0000;
-  line-height: 40rpx;
-  font-size: 18rpx;
-  color: #fff;
-  margin:0;
-  margin-left: auto;
-}
-.wrap .mydetail .mydetail-bottom .contentText{
-  font-size: 34rpx;
-  color: #333;
-}
-.wrap .mydetail .mydetail-bottom .detailBox image{
-  width: 100%;
-  height: 149rpx;
-}
-
-/*首页详情部分 结束*/
-
-/*推荐部分 开始*/
-.recomBox .detailBox{
-  position: relative;
-  width: 100%;
-  height: 149rpx;
-  margin-bottom: 124rpx;
-}
-.recomBox .detailBox .contentBox{
+.main-push .numbers{
+  position:relative;
   display: flex;
   flex-direction: column;
+  align-items:center;
+  box-sizing:border-box;
+  height:362rpx;
+  padding-top:167rpx;
+  border-bottom:1rpx solid #aaa;
+}
+.main-push .numbers .people{
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  position: absolute;
-  top: 34rpx;
-  left: 50%;
-  margin-left: -307rpx;
-  width: 614rpx;
-  height: 184rpx;
-  padding: 26rpx 75rpx 0 68rpx;
-  background: #fff;
-}
-.recomBox .detailBox .contentBox .contentTop{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.recomBox .detailBox .contentBox .contentTop text{
-  font-size: 28rpx;
-  color: #333333;
-}
-.recomBox .detailBox .contentBox .contentTop image{
-  width: 90rpx;
-  height: 55rpx;
-  background: #ccc;
-}
-.recomBox .detailBox .contentBox .centerPic{
-  display: flex;
-  width: 310rpx;
-  height: 24rpx;
-  background: #ccc;
-}
-.recomBox .detail-list{
-  display: flex;
-  padding: 0 22rpx 0 11rpx;
-  justify-content: space-between;
-  margin-bottom: 59rpx;
-}
-.recomBox .detail-item{
-  width: 339rpx;
-  text-align: center;
-}
-.recomBox .detail-item .title{
-  font-size: 24rpx;
-  color: #666666;
-}
-.recomBox .detail-item .item-pic{
-  width: 100%;
-  height: 224rpx;
-  margin-top: 12rpx;
-  background: yellow;
-  margin-bottom: 25rpx;
-}
-.recomBox .detail-item .descrip{
-  display: flex;
-  align-items: center;
-  justify-content: space-between；
-}
-.recomBox .detail-item .descrip image{
-  width: 48rpx;
-  height: 16rpx;
-  background: green;
-  margin-right: 10rpx;
-}
-.recomBox .detail-item .descrip .item-price{
-  font-size: 24rpx;
-  color: #df0000;
-}
-.recomBox .detail-item .descrip .item-price text{
-  font-size: 16rpx;
-}
-.recomBox .detail-item .descrip .item-btn{
-  display: flex;
-  justify-content: space-around;
-  /* width: 132rpx; */
-  height: 40rpx;
-  background: #df0000;
-  line-height: 40rpx;
-  font-size: 18rpx;
-  color: #fff;
-  margin:0;
-  margin-left: auto;
-}
-.recomBox .contentText{
-  font-size: 34rpx;
-  color: #333;
-}
-.recomBox .detailBox image{
-  width: 100%;
-  height: 149rpx;
-}
-.recomBox .recomBox-bgImgBox {
-  width: 100%;
-  height: 494rpx;
-}
-.recomBox .recomBox-bgImgBox image{
-  width: 100%;
-  height: 100%;
-}
-.recomBox .recomBox-rankBox {
-  box-sizing: border-box;
-  padding: 54rpx 14rpx 36rpx 14rpx;
-  background: #eff3f2;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-titleBox {
-  height: 128rpx;
-  display: flex;
-  box-sizing: border-box;
-  padding: 36rpx 30rpx 0 33rpx;
-  justify-content: space-between;
-  align-items: center;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-titleBox .recomBox-rankBox-rankTitle {
-  color: #131313;
-  font-size: 36rpx;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-titleBox .recomBox-rankBox-countTitle {
-  color: #616161;
-  font-size: 26rpx;
-}
+  width:435rpx;
+  height:70rpx;
 
-.recomBox .recomBox-rankBox .recomBox-rankBox-titleBox .recomBox-rankBox-countTitle text:first-child {
-  margin-right: 45rpx;
 }
-.recomBox .recomBox-rankBox .recomBox-rankBox-titleBox .recomBox-rankBox-countTitle text.act {
-  border-bottom: 4rpx solid #2c500d;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox {
-  width: 100%;
-  height: 302rpx;
-  /* background: yellow; */
-  display: flex;
-  justify-content: space-between;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox .recomBox-rankBox-items {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8rpx;
-  background: #fff;
-  width: 32.8%;
-  box-shadow: 0 0 6rpx 1rpx #ccc;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox .recomBox-rankBox-items .recomBox-rankBox-items-img {
-  width: 100%;
-  height: 172rpx;
-  border-radius: 8rpx 8rpx 0 0;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox .recomBox-rankBox-items .recomBox-rankBox-items-textBox{
-  width: 100%;
-  height: 120rpx;
-  /* background: red; */
-  box-sizing: border-box;
-  padding: 22rpx 14rpx 28rpx 24rpx;
-  position: relative;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox .recomBox-rankBox-items .recomBox-rankBox-items-textBox .recomBox-rankBox-items-name{
-  color: #313131;
-  font-size: 28rpx;
-  margin-bottom: 14rpx;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox .recomBox-rankBox-items .recomBox-rankBox-items-textBox .recomBox-rankBox-items-saleNum{
-  color: #848484;
-  font-size: 24rpx;
-}
-.recomBox .recomBox-rankBox .recomBox-rankBox-listBox .recomBox-rankBox-items .recomBox-rankBox-items-textBox .recomBox-rankBox-items-sale{
-  color: #ffffff;
-  font-size: 30rpx;
-  display: block;
-  width: 40rpx;
-  height: 40rpx;
+.main-push .numbers .people view{
+  width:70rpx;
+  height:70rpx;
   border-radius: 50%;
-  background: #278c58;
-  position: absolute;
-  top: -20rpx;
-  left: 50%;
-  margin-left: -20rpx;
-  text-align: center;
-  line-height: 40rpx;
+  background:#fdd;
 }
-/*推荐结束*/
+.main-push .numbers .residue{
+  margin:46rpx 0 36rpx 0;
+  font-size:24rpx;
+  color:#000;
 
-
-/* 猜我喜欢 fir */
-.wrap .likeBox {
-  background: #eff3f2;
 }
-.wrap .likeBox .likeBox-titleBox {
-  color: #131313;
-  font-size: 38rpx;
-  height: 98rpx;
+.main-push .numbers .residue text{
+  color:#f00;
+}
+.main-push .numbers .time-remaining{
   box-sizing: border-box;
-  padding: 0 0 0 35rpx;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translate(-50%,50%);
+  height:31rpx;
+  width:335rpx;
+  padding:0 46rpx;
+  background:#fff;
+  font-size:25rpx;
+  color:#000;
+
 }
-.wrap .likeBox .listBox {
+.main-push .numbers .time-remaining text{
+  display: inline-block;
+  margin:0 5rpx;
+  padding:5rpx;
+  background:#fd897d;
+  color:#f40000;
+}
+
+.coupon{
+ 
+  width:100%;
+  padding-bottom:103rpx;
+  
+}
+.coupon .coupon-top{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top:76rpx;
+}
+.coupon .coupon-top image{
+  height:20rpx;
+}
+.coupon .coupon-top .bigTxt{
+  font-size:36rpx;
+  color:#333333;
+  margin: 43rpx 0 25rpx 0;
+
+
+}
+.coupon .coupon-top .smallTxt{
+  font-size: 29rpx;
+  color:#9e9e9e;
+}
+.coupon .coupon-all{
+  box-sizing:border-box;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  padding: 0 24rpx;
+  width:100%;
+  margin-top:40rpx;
+  padding:0 10rpx;
+ 
 }
-.wrap .likeBox .listBox .items{
-  width: 340rpx;
-  height: 480rpx;
-  margin-bottom: 20rpx;
-  background: #fff;
-  box-shadow: 0 0 6rpx 1rpx #ccc;
-  border-radius: 8rpx;
-}
-.wrap .likeBox .listBox .items .bgImg{
-  width: 100%;
-  height: 288rpx;
-  border-radius: 8rpx 8rpx 0 0;
-}
-.wrap .likeBox .listBox .items .textBox {
-  box-sizing: border-box;
-  padding: 25rpx 0rpx 34rpx 10rpx;
-}
-.wrap .likeBox .listBox .items .textBox .text-decoration {
-  height: 34rpx;
-  /* background: yellow; */
-  color: #333333;
-  font-size: 34rpx;
-  margin-bottom: 14rpx;
-}
-.wrap .likeBox .listBox .items .textBox .text-t {
-  height: 24rpx;
-  color: #999999;
-  font-size: 28rpx;
-  margin-bottom: 20rpx;
-}
+.coupon .coupon-all view.list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:166rpx;
+  height:343rpx;
+  background:#f2f6f5;
 
 
-.wrap .likeBox .listBox .items  .textBox .text-price {
-  color: #d80000;
-  font-size: 38rpx;
+}
+.coupon .coupon-all view.list .first{
+  margin:18rpx 0 28rpx 0;
+  font-size:20rpx;
+  color:#000;
+}
+.coupon .coupon-all view.list .much{
+  font-size:50rpx;
+  color:#188349;
+}
+.coupon .coupon-all view.list .cha{
+  margin:28rpx 0 36rpx 0;
+  font-size:35rpx;
+  color:#333;
+}
+.coupon .coupon-all view.list .txt{
+  font-size:17rpx;
+  color:#9bc8b0;  
+}
+.coupon .coupon-all view.list image{
+  width:140rpx;
+  height:86rpx;
+}
+.shop-treasure,.sale-recommend{
+  position:relative;
+  width:100%;
+}
+.shop-treasure .shop-treasure-top image,.sale-recommend .sale-recommend-top image{
+  width:100%;
+  height:150rpx;
+  background:pink;
+}
+.shop-treasure .tui,.sale-recommend .sale{
+  position:absolute;
+  top:40rpx;
+  left:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+  width:614rpx;
+  height:224rpx;
+  background:#fff;
+  z-index:11;
+}
+.shop-treasure .tui .tui-top,.sale-recommend .sale .sale-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top:28rpx;
+  height:66rpx;
+  width:488rpx;
+}
+.shop-treasure .tui .tui-top .val,.sale-recommend .sale .sale-top .val{
+  font-size: 32rpx;
+  color:#000;
   font-weight: bold;
-  margin-right: 10rpx;
+  
 }
-.wrap .likeBox .listBox .items  .textBox .text-price .icon {
-  font-size: 28rpx;
-  align-self: flex-end;
+.shop-treasure .tui .tui-top image,.sale-recommend .sale .sale-top image{
+  width:92rpx;
+  height:66rpx;
+  background: pink;
+}
+.shop-treasure .tui .imgs,.sale-recommend .sale .imgs{
+  margin:20rpx 0;
+  background:pink;
+  height:24rpx;
+  width:314rpx;
+}
+.shop-treasure .tui .ItemCF,.sale-recommend .sale .ItemCF{
+  font-size: 44rpx;
+  font-weight:bold;
+  color:#000;
+}
+.shop-treasure .shop-content{
+  margin-top:118rpx;
+
+}
+.shop-treasure .shop-content .first-shop{
+  position:relative;
+  box-sizing:border-box;
+  width:100%;
+  padding:0 32rpx;
+}
+.shop-treasure .shop-content .first-shop >image{
+  width:100%;
+  height:580rpx;
+  background:pink;
+}
+.shop-treasure .shop-content .first-shop  .particulars{
+  position:absolute;
+  bottom:0;
+  right:32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width:230rpx;
+  height:145rpx;
+  z-index:11;
+}
+.shop-treasure .shop-content .first-shop  .particulars .particulars-price{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-treasure .shop-content .first-shop  .particulars .particulars-price image{
+  width:60rpx;
+  height:20rpx;
+  background:#f00;
 }
 
-/* 猜我喜欢 end */
+.shop-treasure .shop-content .first-shop  .particulars .particulars-price text{
+  font-size:30rpx;
+  color:#f00;
+
+}
+.shop-treasure .shop-content .first-shop  .particulars .buy{
+  font-size:20rpx;
+  color:#fff;
+  background:#f00;
+  width:152rpx;
+  height:46rpx;
+  text-align: center;
+  line-height:46rpx;
+}
+.sale-recommend .sale-main{
+  display: flex;
+  justify-content: space-around;
+  margin-top:120rpx;
+  margin-bottom:60rpx;
+}
+.sale-recommend .sale-main .sale-list{
+  width:340rpx;
+  font-size:18rpx;
+}
+.sale-recommend .sale-main .sale-list .list-title{
+  height:40rpx;
+  line-height:40rpx;
+  text-align: center;
+}
+.sale-recommend .sale-main .sale-list >image{
+  width:338rpx;
+  height:224rpx;
+  background:#fee;
+}
+.sale-recommend .sale-main .sale-list .pri{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:26rpx;
+  height:40rpx;
+}
+.sale-recommend .sale-main .sale-list .pri image{
+  width:50rpx;
+  height:40rpx;
+}
+.sale-recommend .sale-main .sale-list .pri .all-price{
+  display: block;
+  height:40rpx;
+  line-height:40rpx;
+  font-size:30rpx;
+  color:#f00;
+}
+.sale-recommend .sale-main .sale-list .pri .bug{
+  width:132rpx;
+  height:40rpx;
+  background:#f00;
+  color:#fff;
+  font-size:16rpx;
+  text-align: center;
+  line-height: 40rpx;
+  }
+  .sale-recommend .sale-main .sale-list .pri .bug text:nth-child(2){
+    border: 1rpx solid #ddd;
+    border-radius: 5rpx;
+    padding:5rpx;
+    margin-left:5rpx;
+
+  }
+.sale-recommend .sale-end{
+  width:100%;
+  height:493rpx;
+}
+.sale-recommend .sale-end image{
+  width:100%;
+  height:100%;
+}
+/* 排行开始 */
+/*
+  <view class='ranking-list'>
+    <view class='ranking-title'>
+      <text class='left'>排行榜</text>
+      <view class='ranking'>
+        <text>销量排行</text>
+        <text>销量排行</text>
+      </view>
+    </view>
+  </view>
+*/
+.ranking-list{
+  width:100%;
+  margin-top:20rpx;
+  background:#f2f6f5;
+}
+.ranking-list .ranking-title{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height:106rpx;
+  width:100%;
+  padding:0 46rpx;
+
+}
+.ranking-list .ranking-title .left{
+  font-size:36rpx;
+  color:#131313;
+}
+.ranking-list .ranking-title .ranking{
+  color:#361616;
+  font-size:21rpx;
+}
+.ranking-list .ranking-title .ranking text:nth-child(1){
+  margin-right:45rpx;
+
+
+}
+.ranking-list .ranking-title .ranking text.active{
+  text-decoration: outline;
+}
+.ranking-list .rank-list{
+  display: flex;
+  justify-content: space-around;
+
+}
+.ranking-list .rank-list .lists{
+  display: flex;
+  flex-direction: column;
+  width:230rpx;
+  height:290rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx #ddd;
+
+}
+.ranking-list .rank-list .lists >image{
+  display: block;
+  width:100%;
+  height:171rpx;
+  background:pink;
+}
+.ranking-list .rank-list .lists .rank-txt{
+  flex:1;
+  box-sizing:border-box;
+  position: relative;
+  background:#fff;
+  padding:0 18rpx;
+  width:100%;
+}
+.ranking-list .rank-list .lists .rank-txt .xu{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:40rpx;
+  height:40rpx;
+  background:#278c58;
+  text-align: center;
+  line-height:40rpx;
+  color:#fff;
+  font-size:30rpx;
+  border-radius: 50%;
+}
+.ranking-list .rank-list .lists .rank-txt .txt{
+  font-size:21rpx;
+  color:#313131;
+  padding:40rpx 0 20rpx 0; 
+}
+.ranking-list .rank-list .lists .rank-txt .person{
+  font-size:15rpx;
+  color:#8d8d8d;
+}
+/* 猜你喜欢开始 */
+.your-love{
+  box-sizing: border-box;
+  width:100%;
+  background:#f2f6f5;
+  padding:30rpx 24rpx 20rpx;
+}
+.your-love .love-title{
+  margin-bottom:60rpx;
+}
+.your-love .love-list{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+
+
+}
+.your-love .love-list .love-every{
+  display: flex;
+  flex-direction: column;
+  width:340rpx;
+  height:480rpx;
+  box-shadow: 5rpx 5rpx 5rpx 5rpx #ddd;
+  margin-bottom:27rpx;
+  border-radius: 5rpx;
+}
+.your-love .love-list .love-every image{
+  width:100%;
+  height:290rpx;
+  background:#f00;
+}
+.your-love .love-list .love-every text{
+  padding-left:15rpx;
+}
+.your-love .love-list .love-every text.detail{
+  font-size:32rpx;
+  color:#333333;
+  margin:30rpx 0 16rpx 0;
+
+}
+.your-love .love-list .love-every text.yuan{
+
+  font-size:25rpx;
+  color:#a1a1a1;
+}
+.your-love .love-list .love-every text.love-pri{
+  font-size:35rpx;
+  color:#f00;
+  margin-top:20rpx;
+}
+.your-love .more-love{
+  height:86rpx;
+  width:100%;
+  background:#fff;
+  text-align: center;
+  line-height: 86rpx;
+  font-size:28rpx;
+  color:#000;
+  padding-bottom:18rpx;
+
+}
+  /* 猜你喜欢结束 */

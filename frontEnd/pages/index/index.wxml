@@ -1,249 +1,221 @@
 <!--index.wxml-->
-<view class='wrap'>
-  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" class='swiper'>
-    <block wx:for="{{imgUrls}}" class='swiperList'>
-      <swiper-item class='swiper-items'>
-        <image src="{{item}}" class="slide-image" width="355" height="150" class='swiper-img' />
-      </swiper-item>
-    </block>
-  </swiper>
-  <!--拼团部分 开始-->
-  <view class='put'>
-    <view class='put-mainBox'>
-      <image class='put-mainBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-      </image>
+<view class='index'>
+  <view class='index-tops'> 
+    <view class='kongs'></view>
+    <view class='titles'>
+      <text class='iconfont icon-zuojiantou'></text>
+      <view>首页</view>
+      <view>搜索</view>
     </view>
-    <view class='put-joinBox'>
-      <view class='put-joinBox-alertBox'>
-        <image class='put-joinBox-alertBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-        </image>
-        <view class='put-joinBox-alertBox-textBox'>
-          <text class='put-joinBox-alertBox-text'>
-                      双面乳胶设计呵护颈椎健康泰国乳胶薄款平面枕头
-                  </text>
-          <view class='put-joinBox-alertBox-priceBox'>
-            <view class='put-joinBox-alertBox-new'>
-              <text class='put-joinBox-i'>￥</text> 228
-            </view>
-            <view class='put-joinBox-alertBox-old'>
-              <text class='put-joinBox-i'>￥</text> 150
-            </view>
-          </view>
-          <view class='put-joinBox-shoping'>限时抢购</view>
+    <!-- <text class='goBack'>
+      <
+    </text> -->
+  </view>
+<!-- 轮播开始 -->
+  <view class='banner'>
+    <view class='banner-left'></view>
+    <view class='center'>
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+        <block wx:for="{{carousel}}" wx:key="{{index}}">
+          <swiper-item>
+            <image src="{{item.src}}" class="slide-image" height="360rpx" width="627"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='banner-right'></view>
+  </view>
+  <!-- 轮播结束 -->
+  <!-- 热销开始 -->
+  <view class='main-push'>
+    <view class='mp-top'>
+      <view class='top-title'>快来和我拼团吧</view>
+      <image src='../../image/mainImg.jpg'></image>
+    </view>
+    <view class='main-content'>
+      <image src=''></image>
+      <view class='explain'>
+        <view class='explain-txt'>双面透气设计呵护颈椎健康泰国如绞磨宽频面枕头</view>
+        <view class='price'>
+          <text class='now'>￥228</text>
+          <text class='del'>￥150</text>
         </view>
-      </view>
-      <view class='put-joinBox-headImgBoxList'>
-        <view class='put-joinBox-headImgBoxItems'>
-          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-          <view class='put-joinBox-iconText'>团长</view>
-        </view>
-        <view class='put-joinBox-headImgBoxItems'>
-          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-        </view>
-        <view class='put-joinBox-headImgBoxItems'>
-          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-        </view>
-        <view class='put-joinBox-headImgBoxItems'>
-          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-        </view>
-        <view class='put-joinBox-headImgBoxItems'>
-          <image class='put-joinBox-img' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-        </view>
-      </view>
-      <text class='put-joinBox-rest'>仅剩<text class='put-num'>3</text>人,快呼唤小伙伴们来参加把！</text>
-      <view class='put-joinBox-restTime'>
-        <text class='put-joinBox-line'></text>
-        <view class='put-joinBox-time'>
-          <view class='rest'>剩余</view>
-          <view class='put-joinBox-t'>23</view>
-          <view class='put-joinBox-icon'>：</view>
-          <view class='put-joinBox-t'>23</view>
-          <view class='put-joinBox-icon'>：</view>
-          <view class='put-joinBox-t'>24</view>
-          <view class='rest2'>结束</view>
-        </view>
-        <text class='put-joinBox-line'></text>
+        <text class='flash-sale'>限时抢购</text>
       </view>
     </view>
-    <view class='put-shareBox'>
-      <image class='put-shareBox-img' src='../../img/share.jpg'></image>
+    <view class='numbers'>
+      <view class='people'>
+        <view class='initiator '>
+        <image src=''></image>
+        </view>
+         <view>
+        <image src=''></image>
+        </view>
+         <view>
+        <image src=''></image>
+        </view>
+         <view>
+        <image src=''></image>
+        </view>
+         <view>
+        <image src=''></image>
+        </view>
+      </view>
+      <view class='residue'>
+        仅剩余<text>3</text>人，快呼唤小伙伴来参加吧
+      </view>
+      <view class='time-remaining'>
+        剩余<text>23</text>:<text>23</text>:<text>34</text>结束
+      </view>
     </view>
   </view>
-  <!--拼团部分 结束-->
-  <!-- 详情部分 开始 -->
-  <view class='mydetail'>
-    <view class='mydetail-top'>
-      <image class='mydetail-top-img1' src='../../img/details-1.jpg'></image>
-      <image class='mydetail-top-img2' src='../../img/details-2.jpg'></image>
-      <image class='mydetail-top-img3' src='../../img/details-3.jpg'></image>
+  <!-- 热推荐结束 -->
+  <!-- 优惠券开始 -->
+  <view class='coupon'>
+    <view class='coupon-top'>
+      <image src=''></image>
+      <view class='bigTxt'>玩趣加购 分享有礼</view>
+      <view class='smallTxt'>先领卷 在购物</view>
     </view>
-    <view class='mydetail-bottom'>
-        <view class='detail-item'>
-            <text class='title'>美容按摩枕</text>
-            <image class='item-pic'                                             src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
-              </image>
-            <view class='descrip'>
-              <image src='../../img/icon-striped.jpg'></image>
-              <text class='item-price'><text>￥</text>238.00</text>
-              <button class='item-btn'>
-                立即购买
-                <text>123</text>
-              </button>
-            </view>
-        </view>
-        <view class='detail-item'>
-            <text class='title'>美容按摩枕</text>
-            <image class='item-pic'                                             src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'>
-              </image>
-            <view class='descrip'>
-              <image src='../../img/icon-striped.jpg'></image>
-              <text class='item-price'><text>￥</text>238.00</text>
-              <button class='item-btn'>
-                立即购买
-                <text>123</text>
-              </button>
-            </view>
-        </view>
+    <view class='coupon-all'>
+      <view class='list'>
+        <text class='first'>RMB</text>
+        <text class='much'>10</text>
+        <text class='cha'>x</text>
+        <text class='txt'>收藏+关注</text>
+        <image src=''></image>
+      </view>
+      <view class='list'>
+        <text class='first'>RMB</text>
+        <text class='much'>10</text>
+        <text class='cha'>x</text>
+        <text class='txt'>收藏+关注</text>
+        <image src=''></image>
+      </view>
+      <view class='list'>
+        <text class='first'>RMB</text>
+        <text class='much'>10</text>
+        <text class='cha'>x</text>
+        <text class='txt'>收藏+关注</text>
+        <image src=''></image>
+      </view>
+      <view class='list'>
+        <text class='first'>RMB</text>
+        <text class='much'>10</text>
+        <text class='cha'>x</text>
+        <text class='txt'>收藏+关注</text>
+        <image src=''></image>
+      </view>
     </view>
   </view>
-  <!-- 详情部分 结束 -->
-  <!-- 首页推荐部分 开始 -->
-  <view class='recomBox'>
-    <view class='detailBox' style='position:relative;margin-bottom:124rpx;'>
-      <image src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'></image>
-      <view class='contentBox'>
-        <view class='contentTop'>
-          <image src='../../img/el.png'></image>
-          <text>口碑珍品口碑珍品</text>
-          <image src='../../img/el.png'></image>
-        </view>
-        <image class='centerPic' src='../../img/englist-striped.jpg'></image>
-        <text class='contentText'>按实际立刻决定离开的空间弗</text>
+  <!-- 优惠券结束 -->
+  <!--镇店之宝 -->
+  <view class='shop-treasure'>
+      <view class='shop-treasure-top'>
+        <image src=''></image>
       </view>
-    </view>
-    <view class='detail-list'>
-      <view class='detail-item'>
-        <text class='title'>美容按摩枕</text>
-        <image class='item-pic' src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'></image>
-        <view class='descrip'>
-          <image src='../../img/icon-striped.jpg'></image>
-          <text class='item-price'><text>￥</text>238.00</text>
-          <button class='item-btn'>
-            立即购买
-            <text>123</text>
-          </button>
+      <view class='tui'>
+        <view class='tui-top'>
+          <image src=''></image>
+          <text class='val'>镇店之宝 任君挑选</text>
+          <image src=''></image>
         </view>
+        <view class='imgs'>
+          <image src=''></image>
+        </view>
+        <view class='ItemCF'>泰国平面波浪枕</view>
       </view>
-      <view class='detail-item'>
-        <text class='title'>美容按摩枕</text>
-        <image class='item-pic' src='https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'></image>
-        <view class='descrip'>
-          <image src='../../img/icon-striped.jpg'></image>
-          <text class='item-price'><text>￥</text>238.00</text>
-          <button class='item-btn'>
-            立即购买
-            <text>123</text>
-          </button>
-        </view>
-      </view>
-    </view>
-    <view class='recomBox-bgImgBox'>
-        <image src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'></image>
-    </view>
-    <view class='recomBox-rankBox'>
-        <view class='recomBox-rankBox-titleBox'>
-            <view class='recomBox-rankBox-rankTitle'>排行榜</view>
-            <view class='recomBox-rankBox-countTitle'>
-                <text class='act'>销量排行</text>
-                <text>销量排行</text>
+      <view class='shop-content'>
+        <view class='first-shop'>
+          <image src=''></image>
+         <view class='particulars'>
+            <view class='particulars-price'>
+              <image src=''></image>
+              <text class='pc'>￥228.00</text>
             </view>
-        </view>
-        <view class='recomBox-rankBox-listBox'>
-           
-            <view class='recomBox-rankBox-items'>
-                  <image class='recomBox-rankBox-items-img'
-                      src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'
-                  ></image>
-                  <view class='recomBox-rankBox-items-textBox'>
-                        <text class='recomBox-rankBox-items-name'>泰国乳胶按摩器</text>
-                        <text class='recomBox-rankBox-items-saleNum'>199人付款</text>
-                        <view class='recomBox-rankBox-items-sale'>1</view>
-                  </view>
+            <view class='buy'>
+              立即购买<text>></text>
             </view>
-             <view class='recomBox-rankBox-items'>
-                  <image class='recomBox-rankBox-items-img'
-                      src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'
-                  ></image>
-                  <view class='recomBox-rankBox-items-textBox'>
-                        <text class='recomBox-rankBox-items-name'>泰国乳胶按摩器</text>
-                        <text class='recomBox-rankBox-items-saleNum'>199人付款</text>
-                        <view class='recomBox-rankBox-items-sale'>1</view>
-                  </view>
-            </view>
-             <view class='recomBox-rankBox-items'>
-                  <image class='recomBox-rankBox-items-img'
-                      src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'
-                  ></image>
-                  <view class='recomBox-rankBox-items-textBox'>
-                        <text class='recomBox-rankBox-items-name'>泰国乳胶按摩器</text>
-                        <text class='recomBox-rankBox-items-saleNum'>199人付款</text>
-                        <view class='recomBox-rankBox-items-sale'>1</view>
-                  </view>
-            </view>
-        </view>
-    </view>
-  </view>
-<!-- 首页推荐部分 结束 -->
-  <!--猜我喜欢 开始-->
-  <view class='likeBox'>
-      <view class='likeBox-titleBox'>猜你喜欢</view>
-      <view class='listBox'>
-        <view class='items' bindtap='goDetails'>
-          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-          <view class='textBox'>
-            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
-            <view><text class='text-t'>材料材料</text></view>
-            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
           </view>
-
-        </view>
-        <view class='items'>
-          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-          <view class='textBox'>
-            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
-            <view><text class='text-t'>材料材料</text></view>
-            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
-          </view>
-
-        </view>
-        <view class='items'>
-          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-          <view class='textBox'>
-            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
-            <view><text class='text-t'>材料材料</text></view>
-            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
-          </view>
-
-        </view>
-        <view class='items'>
-          <image class='bgImg' src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'>
-          </image>
-          <view class='textBox'>
-            <view><text class='text-decoration'>包邮随身听夹子MP</text></view>
-            <view><text class='text-t'>材料材料</text></view>
-            <view><text class='text-price'><text class='icon'>￥</text>5</text></view>
-          </view>
-
         </view>
       </view>
   </view>
-  <!--猜我喜欢 结束-->
+  <!-- 镇店之宝结束 -->
+  <!-- 店长推荐开始 -->
+  <view class='sale-recommend'>
+      <view class='sale-recommend-top'>
+        <image src=''></image>
+      </view>
+      <view class='sale'>
+        <view class='sale-top'>
+          <image src=''></image>
+          <text class='val'>口碑臻口 店长力荐</text>
+          <image src=''></image>
+        </view>
+        <view class='imgs'>
+          <image src=''></image>
+        </view>
+        <view class='ItemCF'>泰国平面波浪枕</view>
+      </view>
+      <view class='sale-main'>
+        <view class='sale-list' wx:for="{{recommend}}" wx:key="{{index}}">
+          <view class='list-title'>
+           {{item.shop_name}}
+          </view>
+          <image src="{{item.shop_logo1}}"></image>
+          <view class='pri'>
+            <image src='../../image/icon-striped.jpg'></image>
+            <view class='all-price'> ￥{{item.shop_price}}</view>
+            <view class='bug'>
+              <text>立即购买</text>
+              <text>></text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='sale-end'>
+        <image src='../../image/222.jpg'></image>
+      </view>
+  </view>
+  <!-- 店长推荐结束 -->
+  <!-- 排行榜开始 -->
+  <view class='ranking-list'>
+    <view class='ranking-title'>
+      <text class='left'>排行榜</text>
+      <view class='ranking'>
+        <text class='active'>销量排行</text>
+        <text>销量排行</text>
+      </view>
+    </view>
+    <view class='rank-list'>
+      <view class='lists' wx:for="{{ranking}}" wx:key="{{index}}">
+        <image src="{{item.goods_thumb}}"></image>
+        <view class='rank-txt'>
+          <view class='xu'>1</view>
+          <view class='txt'>
+           {{item.goods_name}}
+          </view>
+          <view class='person'>199人付款</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 排行榜结束 -->
+  <!--猜你喜欢开始 -->
+  <view class='your-love'>
+    <view class='love-title'>猜你喜欢</view>
+    <view class='love-list'>
+      <view class='love-every' bindtap='goParticulars' wx:for="{{guessgoods}}" wx:key="{{index}}" data-id="{{item.goods_id}}">
+        <image src="{{item.goods_thumb}}"></image>
+        <text class='detail'>{{item.goods_name}}</text>
+         <text class='yuan'>泰国天然乳胶原料</text>
+        <text class='love-pri'>￥{{item.shop_price}}</text>
+      </view>
+    </view>
+    <view class='more-love'>
+      查看更多
+    </view>
+  </view>
+  <!-- 猜你喜欢结束 -->
 </view>
