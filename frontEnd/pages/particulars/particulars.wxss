@@ -222,7 +222,6 @@
 .crowdordering .shipping-information .inforLeft .circle{
   font-size:20rpx;
   color:#f00;
-  padding:
 }
 .crowdordering .shipping-information .inforLeft text text{
   display: inline-block;
@@ -232,22 +231,7 @@
   line-height: 69rpx;
 
 }
-/* .crowdordering .shipping-information .inforLeft text:nth-child(n)::before{
-   
-    display: inline-block;
-    width:40rpx;
-    
-    content:'.';
-    text-align: left;
 
-} */
-/* .crowdordering .shipping-information .inforLeft text:nth-child(1)::before{
-  display: inline-block;
-  width:16rpx;
-  height:69rpx;
-  color:#f00;
-  content:'x';
-} */
 .crowdordering .pinPeople{
   margin-top:10rpx;
   width:100%;
@@ -512,11 +496,6 @@
 .van-popup--bottom{
   overflow: visible!important;
 }
-
-/* .kong{
-  height:60rpx;
-  background-color:rgba(0,0,0,.1);
-} */
 .selectType .title-img{
   box-sizing: border-box;
   position: relative;
@@ -586,17 +565,26 @@
   border-radius: 5rpx;
 
 }
-.selectType .size,.selectType .color{
+.selectType .size,.selectType .color,.selectType .number{
   padding-left:12rpx;
 }
-.selectType .size .sizes,.selectType .color .colors{
+.selectType .size .sizes,.selectType .color .colors,.selectType .number .numbers{
   height:105rpx;
+  width:100%;
   font-size:36rpx;
   font-weight: bold;
   line-height:105rpx;
 }
-.selectType .size .allSize,.selectType .color .allColor{
+.selectType .size .allSize,.selectType .color .allColor,.selectType .number .allNumber{
   display: flex;
+}
+.selectType .number .allNumber view{
+  width:30rpx;
+  height:30rpx;
+  border:1rpx solid #ddd;
+  text-align: center;
+  line-height: 30rpx;
+
 }
 .selectType .size .allSize text,.selectType .color .allColor text{
   display: inline-block;
