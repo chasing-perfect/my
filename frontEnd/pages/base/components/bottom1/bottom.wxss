@@ -1,0 +1,17 @@
+.couponBottem{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 33rpx;
+  background: #eee;
+  padding: 30rpx 0 28rpx 0;
+}
+.couponBottem text{
+  font-size: 30rpx;
+  color: #bacdc3;
+  margin-right: 15rpx;
+}
+.couponBottem image{
+  width: 107rpx;
+  height: 64rpx;
+}

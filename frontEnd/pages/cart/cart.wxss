@@ -1,0 +1,190 @@
+/* pages/shoppingCart/shoppingCart.wxss */
+.contain{
+  box-sizing: border-box;
+  overflow:auto;
+  position:relative;
+  background:#fff;
+  height:100vh;
+  padding-top: 150rpx;
+}
+.cartTitles{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+}
+.cartTitle{
+  padding: 67rpx 0 26rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+  color: #333;
+}
+.content{
+  position:absolute;
+  display:flex;
+  top:370rpx;
+  width:100%;
+  flex-direction:column;
+  align-items: center;
+}
+.content .pic{
+  display:block;
+  width:284rpx;
+  height:170rpx;
+  margin-bottom:49rpx;
+  background:red;
+}
+.content text{
+  font-size:30rpx;
+  color:#999999;
+  margin-bottom:58rpx;
+}
+.content button{
+  width:202rpx;
+  height:78rpx;
+  line-height:78rpx;
+  color:#fff;
+  background:#278c58;
+  border-radius:14rpx;
+}
+.goodlist{
+  height: 100vh;
+  background:#f7f7f7;
+}
+.goodlist .goodBox{
+  padding-bottom: 100rpx;
+  background:#f7f7f7;
+}
+.goodlist .goodItem{
+  display:flex;
+  padding: 52rpx 24rpx;
+  justify-content: space-between;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+.goodlist .goodItem .icon-lajitong{
+  font-size: 44rpx;
+  margin-bottom: 21rpx;
+}
+.goodlist .goodItem .pic{
+  width:180rpx;
+  height:180rpx;
+  background:red;
+  border-radius:14rpx;
+  margin:0 33rpx 0 29rpx;
+}
+.goodlist .goodItem .descriptionBox{
+  display:flex;
+  justify-content: space-between;
+  flex:1;
+}
+.goodlist .goodItem .descriptionBox .description text{
+  display:block;
+} 
+.goodlist .goodItem .descriptionBox .description text:first-child{
+  font-size:34rpx;
+  color:#333;
+} 
+.goodlist .goodItem .descriptionBox .description text:nth-child(2){
+  font-size:28rpx;
+  color:#afafaf;
+  margin:21rpx 0 50rpx 0;
+} 
+.goodlist .goodItem .descriptionBox .description text:last-child{
+  font-size:24rpx;
+  color:#df0000;
+} 
+.box{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+.box .countBox{
+  display:flex;
+  border:1rpx solid #e7e7e7;
+  border-radius:7rpx;
+}
+.box .countBox text{
+  display:inline-block;
+  font-size:24rpx;
+  color:#b5b5b5;
+  text-align:center;
+}
+.box .countBox text:first-child,.box .countBox text:last-child{
+  width:46rpx;
+  height:32rpx;
+  line-height:30rpx;
+}
+.box .countBox text:nth-child(2){
+  width:70rpx;
+  height:32rpx;
+  border-left:1rpx solid #e7e7e7;
+  border-right:1rpx solid #e7e7e7;
+}
+.box .remove{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width:100rpx;
+  height:100%;
+  background:#f7f7f7;
+  border-radius:14rpx;
+  font-size:28rpx;
+  color:#afafaf;
+}
+.box .remove icon{
+  width:44rpx;
+  height:43rpx;
+  background:red;
+  margin-bottom:21rpx;
+}
+.accountBox{
+  position:fixed;
+  bottom:0rpx;
+  left:0;
+  box-sizing:border-box;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  background:#fff;
+  padding:22rpx 27rpx 25rpx 24rpx;
+  box-shadow:0 -10rpx 10rpx 0 #f7f7f7 inset;
+}
+.accountBox checkbox-group{
+  display:flex;
+  align-items:center;
+  font-size:30rpx;
+}
+.accountBox checkbox-group checkbox{
+  margin-right:32rpx;
+}
+.goAccount{
+  display:flex;
+  align-items: center;
+}
+.goAccount button{
+  height:70rpx;
+  line-height:70rpx;
+  background:#dc3025;
+  font-size:31rpx;
+  color:#fff;
+}
+.goAccount text{
+  font-size:30rpx;
+  color:#e01616;
+  margin-right:23rpx;
+}
+.totalCount{
+  position:fixed;
+  bottom:30rpx;
+  width: 20rpx;
+  height:20rpx;
+  background:#df0000;
+  border-radius:50%;
+  color:#fffefe;
+  font-size:18rpx;
+  z-index:9999999999999999;
+}

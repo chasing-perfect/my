@@ -3,7 +3,6 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/shoppingCart/shoppingCart",
     "pages/mine/mine",
     "pages/commoditydetails/commoditydetails",
     "pages/browsing/browsing",
@@ -13,7 +12,8 @@
     "pages/account/account",
     "pages/recom/recom",
     "pages/prc/prc",
-    "pages/particulars/particulars"
+    "pages/particulars/particulars",
+    "pages/cart/cart"
   ],
   "permission": {
     "scope.userLocation": {
@@ -43,7 +43,7 @@
         "selectedIconPath": "pages/base/image/pack-active.jpg"
       },
       {
-        "pagePath": "pages/shoppingCart/shoppingCart",
+        "pagePath": "pages/cart/cart",
         "text": "购物车",
         "iconPath": "pages/base/image/cart.jpg",
         "selectedIconPath": "pages/base/image/cart-active.jpg"

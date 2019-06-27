@@ -1,0 +1,24 @@
+@import '../../font1/iconfont.wxss';
+@import '../../font2/iconfont.wxss';
+.cartTitles{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 22;
+}
+.topTitle{
+  display: flex;
+  align-items: center;
+  padding: 67rpx 0 26rpx 23rpx;
+}
+.topTitle icon{
+  font-size: 70rpx;
+}
+.topTitle .cartTitle{
+  text-align: center;
+  font-size: 36rpx;
+  color: #333;
+  margin-left: 220rpx;
+}

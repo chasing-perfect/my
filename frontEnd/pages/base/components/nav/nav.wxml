@@ -1,0 +1,10 @@
+<!--pages/base/components/nav/nav.wxml-->
+<view class="nav-wrap" style="background-color:{{bgColor}};">
+  <view style="height:{{statusBarHeight}}px;"></view>
+  <view class="content">
+    <view class="title">{{title}}</view>
+    <view class="back" bindtap='back'>
+      <icon class="iconfont icon-zuojiantou"></icon> 
+    </view>
+  </view>
+</view>

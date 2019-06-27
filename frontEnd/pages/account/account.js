@@ -10,9 +10,9 @@ Page({
     list: [],
     totalprice: 0
   },
-  chance1(){
+  chance1() {
     this.setData({
-      currentIndex:0
+      currentIndex: 0
     })
   },
   chance2() {
@@ -30,6 +30,16 @@ Page({
       isShow: !this.data.isShow
     })
   },
+  // 求总价格
+  sTotal(){
+    this.data.list.forEach(item => {
+      item.totalPrice = item.count * item.price
+      this.data.totalprice += item.totalPrice
+    })
+    this.setData({
+      totalprice: this.data.totalprice
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -38,15 +48,35 @@ Page({
       title: '确认订单'
     })
     this.data.totalprice = 0;
-    console.log(JSON.parse(options.good))
-    let list = JSON.parse(options.good);
-    list.forEach(item => {
-      item.totalPrice = item.count * item.price
-      this.data.totalprice += item.totalPrice
-    })
-    this.setData({
-      list: list,
-      totalprice: this.data.totalprice
-    })
+    //获取本地存储的内容
+    if(options.index=='0'){
+      wx.getStorage({
+        key: 'goodList',
+        success: res => {
+          this.setData({
+            list: res.data
+          })
+          console.log(this.data.list)
+          this.sTotal()
+        }
+      })
+    }else{
+      wx.getStorage({
+        key: 'cartGood',
+        success: res => {
+          res.data.forEach(item => {
+            if (item.checked) {
+              this.data.list.push(item);
+              this.setData({
+                list: this.data.list
+              })
+            }
+          })
+          this.sTotal()
+        },
+      })
+    }
+      
+    
   }
 })

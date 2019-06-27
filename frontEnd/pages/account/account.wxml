@@ -1,5 +1,6 @@
 <!--pages/account/account.wxml-->
 <view class='contain'>
+  <backNav title="{{'确认订单'}}"/>
   <view class='contentBox'>
     <view class='top'></view>
     <!-- 选择地区 -->
@@ -21,12 +22,13 @@
       <view class='goodItem' wx:for="{{list}}">
         <image class='pic' src="{{item.image}}"></image>
         <view class='descript'>
-          <text>{{item.title}}</text>
-          <text>{{item.color}}</text>
+          <text>{{item.name}}</text>
+          <text class="des">{{item.color}}</text>
+          <text class="des">{{item.size}}</text>
         </view>
         <view class='itemInfo'>
           <text>共{{item.count}}件</text>
-          <text>￥{{item.totalPrice}}.00</text>
+          <text>￥{{item.price}}</text>
         </view>
       </view>
     </view>

@@ -7,54 +7,54 @@ Page({
   data: {
     isShow:true,
     data:[
-      {
-        image: "../base/image/zhen.jpg",
-        title:"狼牙枕2",
-        price: 238.00,
-        color: "白色",
-        count: 1,
-        checked:false
-      },
-      {
-        image: "../base/image/zhen.jpg",
-        title: "狼牙枕3",
-        price: 238.00,
-        color: "白色",
-        count: 2,
-        checked: false
-      },
-      {
-        image: "../base/image/zhen.jpg",
-        title: "狼牙枕4",
-        price: 238.00,
-        color: "白色",
-        count: 4,
-        checked: false
-      },
-      {
-        image: "../base/image/zhen.jpg",
-        title: "狼牙枕5",
-        price: 238.00,
-        color: "白色",
-        count: 5,
-        checked: false
-      },
-      {
-        image: "../base/image/zhen.jpg",
-        title: "狼牙枕6",
-        price: 238.00,
-        color: "白色",
-        count: 6,
-        checked: false
-      },
-      {
-        image: "../base/image/zhen.jpg",
-        title: "狼牙枕7",
-        price: 238.00,
-        color: "白色",
-        count: 7,
-        checked: false
-      }
+      // {
+      //   image: "../base/image/zhen.jpg",
+      //   title:"狼牙枕2",
+      //   price: 238.00,
+      //   color: "白色",
+      //   count: 1,
+      //   checked:false
+      // },
+      // {
+      //   image: "../base/image/zhen.jpg",
+      //   title: "狼牙枕3",
+      //   price: 238.00,
+      //   color: "白色",
+      //   count: 2,
+      //   checked: false
+      // },
+      // {
+      //   image: "../base/image/zhen.jpg",
+      //   title: "狼牙枕4",
+      //   price: 238.00,
+      //   color: "白色",
+      //   count: 4,
+      //   checked: false
+      // },
+      // {
+      //   image: "../base/image/zhen.jpg",
+      //   title: "狼牙枕5",
+      //   price: 238.00,
+      //   color: "白色",
+      //   count: 5,
+      //   checked: false
+      // },
+      // {
+      //   image: "../base/image/zhen.jpg",
+      //   title: "狼牙枕6",
+      //   price: 238.00,
+      //   color: "白色",
+      //   count: 6,
+      //   checked: false
+      // },
+      // {
+      //   image: "../base/image/zhen.jpg",
+      //   title: "狼牙枕7",
+      //   price: 238.00,
+      //   color: "白色",
+      //   count: 7,
+      //   checked: false
+      // }
     ],
     checkGood: [],
     allCheck:false,
@@ -106,6 +106,19 @@ Page({
     this.setData({
       allCheck: !isChecked,
       data: this.data.data
+    })
+    //改变本地存储的值
+    wx.getStorage({
+      key: 'addOrder',
+      success: function (res) {
+        res.data.storage[e.currentTarget.dataset.index].isChecked = e.detail
+        wx.setStorage({
+          key: 'addOrder',
+          data: {
+            storage: res.data.storage
+          }
+        })
+      }
     })
     this.total()
     this.isGo()
@@ -178,7 +191,26 @@ Page({
     wx.setNavigationBarTitle({
       title: '购物车'
     })
-    
+
+    //存储
+    wx.getStorage({
+      key: 'addOrder',
+      success: function(res) {
+        res.data.storage.forEach(item=>{
+          item.isChecked=false
+        })
+        wx.setStorage({
+          key: 'addOrder',
+          data:{
+            storage:res.data.storage
+          }
+        })
+      },
+    })
+    this.setData({
+      data: wx.getStorageSync('addOrder').storage
+    })
+
     if(this.data.data){
       this.setData({
         isShow:false

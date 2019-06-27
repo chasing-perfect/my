@@ -1,6 +1,10 @@
+<!--pages/cart/cart.wxml-->
 <!--pages/shoppingCart/shoppingCart.wxml-->
 <view class='contain'>
-  <view class='top'></view>
+  <view class="cartTitles">
+    <view class="cartTitle">购物车</view>
+    <line/>
+  </view>
   <!-- 购物车为空 -->
   <view class='content' wx:if="{{isShow}}">
     <image class='pic' src='../base/image/ele.png'></image>
@@ -13,11 +17,11 @@
       <view class='goodItem' wx:for="{{data}}">
         <van-checkbox value="{{ item.checked }}" checked-color="#07c160" data-index='{{index}}' bind:change="changeItem">
         </van-checkbox>
-        <image src="{{item.img}}" class='pic'></image>
+        <image src="{{item.image}}" class='pic'></image>
         <view class='descriptionBox'>
           <view class='description'>
-            <text>{{item.title}}</text>
-            <text>{{item.colors}}</text>
+            <text>{{item.name}}</text>
+            <text>{{item.color}}</text>
             <text>￥{{item.price}}</text>
           </view>
           <view class='box'>

@@ -65,36 +65,41 @@ Page({
       //路由跳转
       if (this.data.judge=='0'){
         //发起拼单
+        // let storage = wx.getStorageSync('goodList').storage;
+        wx.getStorage({
+          key: 'goodList',
+          success: function(res) {
+            res.data[0].count = curNum
+            res.data[0].colors = crs
+            res.data[0].sizes = sis
 
-        let storage = wx.getStorageSync('share').storage;
-        storage[0].count = curNum
-        storage[0].colors = crs
-        storage[0].sizes = sis
-        //存储
-        wx.setStorage({
-          key: 'share',
-          data: {
-            storage
+            wx.setStorage({
+              key: 'goodList',
+              data:res.data
+            })
           }
         })
         wx.navigateTo({
-          url: '../settle/settle',
+          url: '../account/account?index=0'
         })
       }else if(this.data.judge=='1'){
         //单独购买
-        let storage = wx.getStorageSync('addOrder').storage;
-        storage[storage.length - 1].count = curNum
-        storage[storage.length - 1].colors = crs
-        storage[storage.length - 1].sizes = sis
-        //存储
-        wx.setStorage({
-          key: 'addOrder',
-          data: {
-            storage
+        wx.getStorage({
+          key: 'cartGood',
+          success: function(res) {
+            res.data[res.data.length - 1].count = curNum
+            res.data[res.data.length - 1].colors = crs
+            res.data[res.data.length - 1].sizes = sis
+
+            //存储
+            wx.setStorage({
+              key: 'cartGood',
+              data:res.data
+            })
           }
         })
         wx.switchTab({
-          url: '../shoppingCart/shoppingCart'
+          url: '../cart/cart?index=1'
         })
 
       }
@@ -143,52 +148,52 @@ Page({
     this.setData({
       isShow: true
     })
-
+    let modes = this.data.mode;
     if(el.currentTarget.dataset.index=='0'){
       //发起拼单
-      let storage = [
-        {
-          img: this.data.mode.goods_thumb,
-          title: this.data.mode.goods_name,
-          price: this.data.mode.shop_price
-        }
-      ]
       //存储img title price
       wx.setStorage({
-        key: 'share',
-        data: {
-          storage
-        }
+        key: 'goodList',
+        data:[
+          {
+            image: modes.goods_thumb,
+            title: modes.goods_name,
+            price: modes.shop_price
+          }
+        ]
       })
     } else if (el.currentTarget.dataset.index == '1'){
       //单独购买 去购物车
-      let storage = [];
-      if (wx.getStorageSync('addOrder')) {
+      if (wx.getStorageSync('cartGood')) {
         //如果有数据
-        storage = wx.getStorageSync('addOrder').storage
-        storage.push({
-          img: this.data.mode.goods_thumb,
-          title: this.data.mode.goods_name,
-          price: this.data.mode.shop_price,
-          isChecked:false
+       
+        wx.getStorage({
+          key: 'cartGood',
+          success: function(res) {
+            res.data.push({
+              image: modes.goods_thumb,
+              title: modes.goods_name,
+              price: modes.shop_price,
+              isChecked: false
+            })
+            wx.setStorage({
+              key: 'cartGood',
+              data:res.data
+            })
+          }
         })
       } else {
         //如果没有
-        storage = [
-          {
-            img: this.data.mode.goods_thumb,
-            title: this.data.mode.goods_name,
-            price: this.data.mode.shop_price,
-            isChecked:false
-          }
-        ]
+        wx.setStorage({
+          key: 'cartGood',
+          data:[{
+            image: modes.goods_thumb,
+            title: modes.goods_name,
+            price: modes.shop_price,
+            isChecked: false
+          }]
+        })
       }
-      wx.setStorage({
-        key: 'addOrder',
-        data: {
-          storage
-        }
-      })
     }
   },
   noShow:function (){
@@ -202,18 +207,16 @@ Page({
     })
     if (this.data.judge=='0'){
       //发起拼单
-      wx.removeStorageSync('share')
+      wx.removeStorageSync('goodList')
 
     }else if(this.data.judge=='1'){
      wx.getStorage({
-       key: 'addOrder',
+       key: 'cartGood',
        success: function(res) {
-        res.data.storage.splice(res.data.storage.length-1,1)
+        res.data.splice(res.data.length-1,1)
         wx.setStorage({
-          key: 'addOrder',
-          data: {
-            storage: res.data.storage
-          }
+          key: 'cartGood',
+          data: res.data
         })
        }
      })

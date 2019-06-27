@@ -1,0 +1,5 @@
+<!--pages/base/components/bottom/bottom.wxml-->
+<view class="couponBottem">
+  <text>{{texts}}</text>
+  <image src='../../image/ele.png'></image>
+</view>
